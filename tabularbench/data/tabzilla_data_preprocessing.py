@@ -1,13 +1,13 @@
+import warnings
 from pathlib import Path
+
 from loguru import logger
 
 # Import all openml preprocessor modules.
 # NOTE: To import datasets from sources other than openml, add them using a new module
 from tabularbench.data.tabzilla_preprocessors_openml import create_preprocessor_dict
-
-import warnings
-
 from tabularbench.utils.paths_and_filenames import PATH_TO_OPENML_DATASETS
+
 warnings.filterwarnings('ignore', category=FutureWarning ) # Openml FutureWarning for version 0.15
 
 dataset_path = Path(PATH_TO_OPENML_DATASETS)
