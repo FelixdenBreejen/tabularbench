@@ -11,7 +11,7 @@ from omegaconf import DictConfig, OmegaConf
 from tabularbench.config.config_benchmark_sweep import ConfigBenchmarkSweep, ConfigPlotting
 from tabularbench.config.config_plotting import ConfigPlottingTabzilla, ConfigPlottingWhytrees
 from tabularbench.config.config_save_load_mixin import ConfigSaveLoadMixin
-from tabularbench.core.enums import BenchmarkName, ModelName, SearchType
+from tabularbench.core.enums import BenchmarkName, BenchmarkOrigin, ModelName, SearchType
 from tabularbench.data.benchmarks import BENCHMARKS
 
 
@@ -62,6 +62,8 @@ class ConfigMain(ConfigSaveLoadMixin):
           
             dataset_ids_to_ignore = list(set(cfg_hydra.openml_dataset_ids_to_ignore) & set(benchmark.openml_dataset_ids))
 
+            n_default_runs_per_dataset = cfg_hydra.n_default_runs_per_dataset if benchmark.origin == BenchmarkOrigin.WHYTREES else 1
+
             bscfg = ConfigBenchmarkSweep(
                 output_dir=output_dir_benchmark,
                 seed=cfg_hydra.seed,
@@ -72,7 +74,7 @@ class ConfigMain(ConfigSaveLoadMixin):
                 search_type=search_type,
                 plotting=create_config_plotting(cfg_hydra),
                 n_random_runs_per_dataset=cfg_hydra.n_random_runs_per_dataset,
-                n_default_runs_per_dataset=cfg_hydra.n_default_runs_per_dataset,
+                n_default_runs_per_dataset=n_default_runs_per_dataset,
                 openml_dataset_ids_to_ignore=dataset_ids_to_ignore,
                 hyperparams_object=hyperparams_object
             )

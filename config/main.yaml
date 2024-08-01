@@ -8,13 +8,13 @@ defaults:
   - hyperparams/tabpfn: zeroshot_10k
   - hyperparams/foundation: finetune_10k
   - plotting: plotting_default
-  - main_test
+  # - main_test
   - override hydra/hydra_logging: disabled  
   - override hydra/job_logging: disabled  
 
 output_dir: ${hydra:run.dir}
 seed: 0
-devices: [0, 1, 2, 3, 4, 5, 6, 7]
+devices: [0, 1, 2, 3]
 n_random_runs_per_dataset: 500                  # suggested: 500 
 n_default_runs_per_dataset: 10                  # on default we also want multiple runs for the confidence bound
 
@@ -34,7 +34,7 @@ benchmarks:
   # - CATEGORICAL_REGRESSION_LARGE
   # - NUMERICAL_REGRESSION_LARGE
   # - TABZILLA_HARD_MAX_TEN_CLASSES
-  # - TABZILLA_HAS_COMPLETED_RUNS
+  - TABZILLA_HAS_COMPLETED_RUNS
 search_types:
   - DEFAULT
   # - RANDOM
