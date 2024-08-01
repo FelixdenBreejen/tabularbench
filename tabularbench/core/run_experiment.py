@@ -75,7 +75,7 @@ def run_experiment_(cfg: ConfigRun) -> RunMetrics:
         data = Data.from_standard_datasplits(x_train, x_val, x_test, y_train, y_val, y_test, cfg.task)
 
         model = get_model(cfg, data.x_train_cut, data.y_train_cut, categorical_indicator)
-        trainer = get_trainer(cfg, model, dataset.n_classes)
+        trainer = get_trainer(cfg, model, dataset.n_classes, dataset.feature_names)
         trainer.train(data.x_train_cut, data.y_train_cut, data.x_val_earlystop, data.y_val_earlystop)
 
         prediction_metrics_train = trainer.test(data.x_train, data.y_train, data.x_train, data.y_train)

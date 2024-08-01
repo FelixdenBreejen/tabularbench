@@ -28,6 +28,7 @@ class OpenMLDataset():
         self.X, self.y, self.categorical_indicator = self.do_basic_preprocessing(X, y, categorical_indicator)
 
         self.n_classes = len(np.unique(self.y))
+        self.feature_names = ds['attribute_names'].values
 
 
 

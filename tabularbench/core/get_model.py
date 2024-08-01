@@ -15,6 +15,8 @@ def get_model(cfg: ConfigRun, x_train: np.ndarray, y_train: np.ndarray, categori
     match cfg.model_name:
         case ModelName.FT_TRANSFORMER:
             return FTTransformer(cfg, x_train, y_train, categorical_indicator)
+        case ModelName.CARTE:
+            return torch.nn.Module()
         case ModelName.TABPFN:
             return TabPFN(
                 cfg.hyperparams['use_pretrained_weights'], 

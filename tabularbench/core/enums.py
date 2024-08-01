@@ -63,6 +63,7 @@ class ModelName(StrEnum):
     DANET = "DANet"
     NAM = "NAM"
     NODE = "NODE"
+    CARTE = "CARTE"
 
 
 class ModelClass(StrEnum):
