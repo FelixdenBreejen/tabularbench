@@ -3,6 +3,7 @@ from typing import Self
 
 import numpy as np
 import scipy
+from loguru import logger
 from sklearn.metrics import accuracy_score, f1_score, log_loss, mean_squared_error, r2_score, roc_auc_score
 
 from tabularbench.core.enums import MetricName, Task
@@ -63,10 +64,15 @@ def roc_auc_score_multiclass(y_true, y_pred_proba, multi_class='ovo', average='m
         # AUC is not defined if there is only one class
         return float('nan')
 
-    if y_pred_proba.shape[1] == 2:
-        return roc_auc_score(y_true, y_pred_proba[:, 1])
-    else:
-        return roc_auc_score(y_true, y_pred_proba, multi_class=multi_class, average=average, labels=labels)
+    try:
+        if y_pred_proba.shape[1] == 2:
+            return roc_auc_score(y_true, y_pred_proba[:, 1])
+        else:
+            return roc_auc_score(y_true, y_pred_proba, multi_class=multi_class, average=average, labels=labels)
+    except ValueError as e:
+        logger.error(f"Error computing roc_auc_score: {e}")
+        logger.error(f"Returning {-1}")
+        return -1
 
 
 def compute_regression_metrics(y_pred: np.ndarray, y_true: np.ndarray) -> tuple[float, float, dict]:
