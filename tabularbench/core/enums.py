@@ -64,6 +64,7 @@ class ModelName(StrEnum):
     NAM = "NAM"
     NODE = "NODE"
     CARTE = "CARTE"
+    AUTOGLUON = "AutoGluon"
 
 
 class ModelClass(StrEnum):
