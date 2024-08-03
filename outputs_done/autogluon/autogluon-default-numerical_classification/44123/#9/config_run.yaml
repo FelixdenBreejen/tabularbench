@@ -1,0 +1,43 @@
+!!python/object:tabularbench.config.config_run.ConfigRun
+datafile_path: !!python/object/apply:pathlib.PosixPath
+- data
+- datasets
+- whytrees_44123_MEDIUM.nc
+dataset_size: !!python/object/apply:tabularbench.core.enums.DatasetSize
+- 10000
+device: !!python/object/apply:torch.device
+- cuda
+- 0
+hyperparams:
+  num_cpus: 8
+  time_limit: 3600
+model_name: !!python/object/apply:tabularbench.core.enums.ModelName
+- AutoGluon
+openml_dataset_id: !!python/object/apply:numpy.core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - i4
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  W6wAAA==
+openml_dataset_name: house_16H
+output_dir: !!python/object/apply:pathlib.PosixPath
+- outputs
+- '2024-08-03'
+- 10-19-33
+- autogluon-default-numerical_classification
+- '44123'
+- '#9'
+seed: 9
+task: !!python/object/apply:tabularbench.core.enums.Task
+- classification

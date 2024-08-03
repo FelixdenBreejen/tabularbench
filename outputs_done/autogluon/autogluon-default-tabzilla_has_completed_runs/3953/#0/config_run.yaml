@@ -1,0 +1,42 @@
+!!python/object:tabularbench.config.config_run.ConfigRun
+datafile_path: !!python/object/apply:pathlib.PosixPath
+- data
+- datasets
+- tabzilla_3953.nc
+dataset_size: null
+device: !!python/object/apply:torch.device
+- cuda
+- 5
+hyperparams:
+  num_cpus: 8
+  time_limit: 3600
+model_name: !!python/object/apply:tabularbench.core.enums.ModelName
+- AutoGluon
+openml_dataset_id: !!python/object/apply:numpy.core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - i4
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  cQ8AAA==
+openml_dataset_name: adult-census
+output_dir: !!python/object/apply:pathlib.PosixPath
+- outputs
+- '2024-08-03'
+- 10-19-33
+- autogluon-default-tabzilla_has_completed_runs
+- '3953'
+- '#0'
+seed: 0
+task: !!python/object/apply:tabularbench.core.enums.Task
+- classification
