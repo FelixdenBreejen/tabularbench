@@ -1,0 +1,53 @@
+2024-03-24 20:30:35.559 | INFO     | tabularbench.core.run_experiment:run_experiment:24 - Start experiment on Bioresponse (id=45019) with Foundation doing classification
+2024-03-24 20:30:35.560 | INFO     | tabularbench.core.run_experiment:run_experiment:27 - Set seed to 3
+2024-03-24 20:30:35.561 | INFO     | tabularbench.core.run_experiment:run_experiment:29 - We are using the following hyperparameters:
+2024-03-24 20:30:35.561 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_features: 100
+2024-03-24 20:30:35.561 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_classes: 10
+2024-03-24 20:30:35.561 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     dim: 512
+2024-03-24 20:30:35.561 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_layers: 12
+2024-03-24 20:30:35.561 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_heads: 4
+2024-03-24 20:30:35.562 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     attn_dropout: 0.0
+2024-03-24 20:30:35.562 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     y_as_float_embedding: True
+2024-03-24 20:30:35.562 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     linear_attention: False
+2024-03-24 20:30:35.562 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_samples_support: 8192
+2024-03-24 20:30:35.562 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_samples_query: 1024
+2024-03-24 20:30:35.562 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_epochs: 0
+2024-03-24 20:30:35.563 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     optimizer: adamw
+2024-03-24 20:30:35.563 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr: 1e-05
+2024-03-24 20:30:35.563 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     weight_decay: 0
+2024-03-24 20:30:35.563 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr_scheduler: False
+2024-03-24 20:30:35.563 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr_scheduler_patience: 30
+2024-03-24 20:30:35.563 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     early_stopping_patience: 40
+2024-03-24 20:30:35.563 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_pretrained_weights: True
+2024-03-24 20:30:35.564 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     path_to_weights: outputs_done/foundation_forest_big_300k/weights/model_step_300000.pt
+2024-03-24 20:30:35.564 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_ensembles: 1
+2024-03-24 20:30:35.564 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_quantile_transformer: True
+2024-03-24 20:30:35.564 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_feature_count_scaling: True
+2024-03-24 20:30:39.544 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 1/5 of Bioresponse (id=45019) with FOUNDATION doing CLASSIFICATION
+2024-03-24 20:30:40.404 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:84 - A maximum of 100 features are allowed, but the dataset has 419 features. A subset of 100 are selected using SelectKBest
+2024-03-24 20:30:41.767 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.6118 | Val score: 0.6902
+2024-03-24 20:30:42.884 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_0 :: train: 0.7149, val: 0.6408, test: 0.6870
+2024-03-24 20:30:46.802 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 2/5 of Bioresponse (id=45019) with FOUNDATION doing CLASSIFICATION
+2024-03-24 20:30:47.180 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:84 - A maximum of 100 features are allowed, but the dataset has 419 features. A subset of 100 are selected using SelectKBest
+2024-03-24 20:30:48.259 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.6176 | Val score: 0.6736
+2024-03-24 20:30:49.476 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_1 :: train: 0.6962, val: 0.6699, test: 0.6884
+2024-03-24 20:30:53.409 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 3/5 of Bioresponse (id=45019) with FOUNDATION doing CLASSIFICATION
+2024-03-24 20:30:53.786 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:84 - A maximum of 100 features are allowed, but the dataset has 419 features. A subset of 100 are selected using SelectKBest
+2024-03-24 20:30:54.833 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.6366 | Val score: 0.6195
+2024-03-24 20:30:55.839 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_2 :: train: 0.7029, val: 0.6602, test: 0.6801
+2024-03-24 20:30:59.764 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 4/5 of Bioresponse (id=45019) with FOUNDATION doing CLASSIFICATION
+2024-03-24 20:31:00.153 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:84 - A maximum of 100 features are allowed, but the dataset has 419 features. A subset of 100 are selected using SelectKBest
+2024-03-24 20:31:01.353 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.5906 | Val score: 0.6819
+2024-03-24 20:31:02.531 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_3 :: train: 0.6816, val: 0.6861, test: 0.6856
+2024-03-24 20:31:06.464 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 5/5 of Bioresponse (id=45019) with FOUNDATION doing CLASSIFICATION
+2024-03-24 20:31:06.852 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:84 - A maximum of 100 features are allowed, but the dataset has 419 features. A subset of 100 are selected using SelectKBest
+2024-03-24 20:31:07.874 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.5694 | Val score: 0.7089
+2024-03-24 20:31:08.862 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_4 :: train: 0.6900, val: 0.6926, test: 0.6343
+2024-03-24 20:31:08.880 | INFO     | tabularbench.core.run_experiment:run_experiment:42 - Finished experiment on Bioresponse (id=45019) with Foundation doing CLASSIFICATION
+2024-03-24 20:31:08.881 | INFO     | tabularbench.core.run_experiment:run_experiment:43 - Final scores: 
+2024-03-24 20:31:08.883 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_0 :: train: 0.7149, val: 0.6408, test: 0.6870
+2024-03-24 20:31:08.884 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_1 :: train: 0.6962, val: 0.6699, test: 0.6884
+2024-03-24 20:31:08.885 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_2 :: train: 0.7029, val: 0.6602, test: 0.6801
+2024-03-24 20:31:08.885 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_3 :: train: 0.6816, val: 0.6861, test: 0.6856
+2024-03-24 20:31:08.886 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_4 :: train: 0.6900, val: 0.6926, test: 0.6343
+2024-03-24 20:31:08.887 | INFO     | tabularbench.core.run_experiment:run_experiment:53 - cv_average :: train: 0.6971, val: 0.6699, test: 0.6751

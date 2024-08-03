@@ -1,0 +1,602 @@
+2024-03-27 02:27:51.285 | INFO     | tabularbench.core.run_experiment:run_experiment:24 - Start experiment on Satellite (id=167211) with Foundation doing classification
+2024-03-27 02:27:51.286 | INFO     | tabularbench.core.run_experiment:run_experiment:27 - Set seed to 0
+2024-03-27 02:27:51.286 | INFO     | tabularbench.core.run_experiment:run_experiment:29 - We are using the following hyperparameters:
+2024-03-27 02:27:51.287 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_features: 100
+2024-03-27 02:27:51.287 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_classes: 10
+2024-03-27 02:27:51.287 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     dim: 512
+2024-03-27 02:27:51.287 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_layers: 12
+2024-03-27 02:27:51.287 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_heads: 4
+2024-03-27 02:27:51.288 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     attn_dropout: 0.0
+2024-03-27 02:27:51.288 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     y_as_float_embedding: True
+2024-03-27 02:27:51.288 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     linear_attention: True
+2024-03-27 02:27:51.288 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_samples_support: 8192
+2024-03-27 02:27:51.288 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_samples_query: 1024
+2024-03-27 02:27:51.289 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_epochs: 300
+2024-03-27 02:27:51.289 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     optimizer: adamw
+2024-03-27 02:27:51.289 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr: 1e-05
+2024-03-27 02:27:51.289 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     weight_decay: 0
+2024-03-27 02:27:51.289 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr_scheduler: False
+2024-03-27 02:27:51.290 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr_scheduler_patience: 30
+2024-03-27 02:27:51.290 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     early_stopping_patience: 40
+2024-03-27 02:27:51.290 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_pretrained_weights: True
+2024-03-27 02:27:51.290 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     path_to_weights: outputs/2024-03-24/09-13-45/weights/model_step_600000.pt
+2024-03-27 02:27:51.290 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_ensembles: 1
+2024-03-27 02:27:51.291 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_quantile_transformer: True
+2024-03-27 02:27:51.291 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_feature_count_scaling: True
+2024-03-27 02:27:51.291 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     name: FOUNDATION
+2024-03-27 02:27:51.431 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 1/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:28:04.213 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0147 | Val score: 0.9975
+2024-03-27 02:28:11.999 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0149 | Train score: 0.9954 | Val loss: 0.0151 | Val score: 0.9951
+2024-03-27 02:28:12.219 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0195 | Train score: 0.9939 | Val loss: 0.0149 | Val score: 0.9951
+2024-03-27 02:28:12.321 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0253 | Train score: 0.9923 | Val loss: 0.0147 | Val score: 0.9963
+2024-03-27 02:28:12.422 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0134 | Train score: 0.9939 | Val loss: 0.0144 | Val score: 0.9951
+2024-03-27 02:28:21.667 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0136 | Train score: 0.9954 | Val loss: 0.0142 | Val score: 0.9951
+2024-03-27 02:28:28.806 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0197 | Train score: 0.9923 | Val loss: 0.0141 | Val score: 0.9939
+2024-03-27 02:28:35.823 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0330 | Train score: 0.9862 | Val loss: 0.0145 | Val score: 0.9939
+2024-03-27 02:28:36.160 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0118 | Train score: 0.9954 | Val loss: 0.0148 | Val score: 0.9939
+2024-03-27 02:28:36.522 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0220 | Train score: 0.9939 | Val loss: 0.0150 | Val score: 0.9939
+2024-03-27 02:28:36.908 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0194 | Train score: 0.9939 | Val loss: 0.0151 | Val score: 0.9939
+2024-03-27 02:28:37.022 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0166 | Train score: 0.9939 | Val loss: 0.0153 | Val score: 0.9939
+2024-03-27 02:28:37.136 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0348 | Train score: 0.9923 | Val loss: 0.0154 | Val score: 0.9939
+2024-03-27 02:28:37.252 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0131 | Train score: 0.9985 | Val loss: 0.0152 | Val score: 0.9939
+2024-03-27 02:28:37.365 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0244 | Train score: 0.9954 | Val loss: 0.0151 | Val score: 0.9963
+2024-03-27 02:28:37.467 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0121 | Train score: 0.9939 | Val loss: 0.0149 | Val score: 0.9963
+2024-03-27 02:28:37.581 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0200 | Train score: 0.9939 | Val loss: 0.0147 | Val score: 0.9963
+2024-03-27 02:28:37.801 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0112 | Train score: 0.9969 | Val loss: 0.0145 | Val score: 0.9963
+2024-03-27 02:28:38.090 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0099 | Train score: 0.9969 | Val loss: 0.0143 | Val score: 0.9963
+2024-03-27 02:28:38.430 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0192 | Train score: 0.9923 | Val loss: 0.0142 | Val score: 0.9963
+2024-03-27 02:28:38.665 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0175 | Train score: 0.9923 | Val loss: 0.0141 | Val score: 0.9975
+2024-03-27 02:28:39.103 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0256 | Train score: 0.9862 | Val loss: 0.0139 | Val score: 0.9975
+2024-03-27 02:28:44.856 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0076 | Train score: 0.9969 | Val loss: 0.0139 | Val score: 0.9975
+2024-03-27 02:28:44.957 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0076 | Train score: 0.9969 | Val loss: 0.0141 | Val score: 0.9975
+2024-03-27 02:28:45.059 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0128 | Train score: 0.9939 | Val loss: 0.0142 | Val score: 0.9975
+2024-03-27 02:28:45.160 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0119 | Train score: 0.9969 | Val loss: 0.0143 | Val score: 0.9951
+2024-03-27 02:28:45.261 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0090 | Train score: 0.9954 | Val loss: 0.0144 | Val score: 0.9963
+2024-03-27 02:28:45.362 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0137 | Train score: 0.9954 | Val loss: 0.0146 | Val score: 0.9963
+2024-03-27 02:28:45.463 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0066 | Train score: 0.9985 | Val loss: 0.0148 | Val score: 0.9963
+2024-03-27 02:28:45.564 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0044 | Train score: 1.0000 | Val loss: 0.0153 | Val score: 0.9963
+2024-03-27 02:28:45.665 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0113 | Train score: 0.9954 | Val loss: 0.0151 | Val score: 0.9963
+2024-03-27 02:28:45.766 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0039 | Train score: 0.9985 | Val loss: 0.0152 | Val score: 0.9963
+2024-03-27 02:28:45.868 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0070 | Train score: 0.9969 | Val loss: 0.0155 | Val score: 0.9963
+2024-03-27 02:28:45.969 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0048 | Train score: 0.9985 | Val loss: 0.0162 | Val score: 0.9963
+2024-03-27 02:28:46.073 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0059 | Train score: 0.9985 | Val loss: 0.0179 | Val score: 0.9963
+2024-03-27 02:28:46.174 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0022 | Train score: 1.0000 | Val loss: 0.0216 | Val score: 0.9963
+2024-03-27 02:28:46.387 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0071 | Train score: 0.9969 | Val loss: 0.0217 | Val score: 0.9963
+2024-03-27 02:28:46.668 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0055 | Train score: 0.9985 | Val loss: 0.0235 | Val score: 0.9963
+2024-03-27 02:28:46.890 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0070 | Train score: 0.9985 | Val loss: 0.0245 | Val score: 0.9963
+2024-03-27 02:28:47.052 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0095 | Train score: 0.9954 | Val loss: 0.0224 | Val score: 0.9963
+2024-03-27 02:28:47.153 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0203 | Train score: 0.9954 | Val loss: 0.0186 | Val score: 0.9963
+2024-03-27 02:28:47.255 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0161 | Train score: 0.9985 | Val loss: 0.0161 | Val score: 0.9963
+2024-03-27 02:28:47.363 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 042 | Train loss: 0.0178 | Train score: 0.9954 | Val loss: 0.0160 | Val score: 0.9963
+2024-03-27 02:28:47.466 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 043 | Train loss: 0.0062 | Train score: 0.9969 | Val loss: 0.0180 | Val score: 0.9963
+2024-03-27 02:28:47.581 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 044 | Train loss: 0.0085 | Train score: 1.0000 | Val loss: 0.0191 | Val score: 0.9963
+2024-03-27 02:28:47.682 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 045 | Train loss: 0.0140 | Train score: 0.9969 | Val loss: 0.0169 | Val score: 0.9963
+2024-03-27 02:28:47.784 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 046 | Train loss: 0.0094 | Train score: 0.9985 | Val loss: 0.0166 | Val score: 0.9963
+2024-03-27 02:28:47.885 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 047 | Train loss: 0.0077 | Train score: 0.9985 | Val loss: 0.0184 | Val score: 0.9963
+2024-03-27 02:28:47.987 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 048 | Train loss: 0.0033 | Train score: 0.9985 | Val loss: 0.0206 | Val score: 0.9951
+2024-03-27 02:28:48.089 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 049 | Train loss: 0.0060 | Train score: 1.0000 | Val loss: 0.0225 | Val score: 0.9951
+2024-03-27 02:28:48.192 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 050 | Train loss: 0.0062 | Train score: 0.9969 | Val loss: 0.0238 | Val score: 0.9951
+2024-03-27 02:28:48.296 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 051 | Train loss: 0.0038 | Train score: 0.9985 | Val loss: 0.0251 | Val score: 0.9951
+2024-03-27 02:28:48.398 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 052 | Train loss: 0.0069 | Train score: 0.9969 | Val loss: 0.0261 | Val score: 0.9951
+2024-03-27 02:28:48.500 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 053 | Train loss: 0.0016 | Train score: 1.0000 | Val loss: 0.0274 | Val score: 0.9951
+2024-03-27 02:28:48.742 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 054 | Train loss: 0.0040 | Train score: 0.9985 | Val loss: 0.0288 | Val score: 0.9951
+2024-03-27 02:28:49.077 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 055 | Train loss: 0.0080 | Train score: 0.9954 | Val loss: 0.0296 | Val score: 0.9951
+2024-03-27 02:28:49.344 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 056 | Train loss: 0.0052 | Train score: 0.9985 | Val loss: 0.0301 | Val score: 0.9951
+2024-03-27 02:28:49.606 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 057 | Train loss: 0.0055 | Train score: 0.9985 | Val loss: 0.0308 | Val score: 0.9963
+2024-03-27 02:28:49.898 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 058 | Train loss: 0.0059 | Train score: 0.9969 | Val loss: 0.0308 | Val score: 0.9963
+2024-03-27 02:28:50.154 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 059 | Train loss: 0.0041 | Train score: 0.9985 | Val loss: 0.0310 | Val score: 0.9963
+2024-03-27 02:28:50.468 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 060 | Train loss: 0.0064 | Train score: 0.9985 | Val loss: 0.0305 | Val score: 0.9963
+2024-03-27 02:28:50.719 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 061 | Train loss: 0.0065 | Train score: 0.9954 | Val loss: 0.0321 | Val score: 0.9963
+2024-03-27 02:28:50.720 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:28:52.421 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_0 :: train: 0.9975, val: 0.9961, test: 0.9863
+2024-03-27 02:28:52.658 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 2/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:29:00.247 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0223 | Val score: 0.9939
+2024-03-27 02:29:07.470 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0082 | Train score: 0.9969 | Val loss: 0.0262 | Val score: 0.9926
+2024-03-27 02:29:08.038 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0242 | Train score: 0.9923 | Val loss: 0.0269 | Val score: 0.9926
+2024-03-27 02:29:08.566 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0234 | Train score: 0.9923 | Val loss: 0.0267 | Val score: 0.9914
+2024-03-27 02:29:09.039 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0173 | Train score: 0.9908 | Val loss: 0.0267 | Val score: 0.9926
+2024-03-27 02:29:09.516 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0226 | Train score: 0.9893 | Val loss: 0.0270 | Val score: 0.9914
+2024-03-27 02:29:09.978 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0307 | Train score: 0.9908 | Val loss: 0.0273 | Val score: 0.9914
+2024-03-27 02:29:10.490 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0144 | Train score: 0.9954 | Val loss: 0.0279 | Val score: 0.9914
+2024-03-27 02:29:10.932 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0119 | Train score: 0.9969 | Val loss: 0.0284 | Val score: 0.9914
+2024-03-27 02:29:11.383 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0156 | Train score: 0.9954 | Val loss: 0.0287 | Val score: 0.9914
+2024-03-27 02:29:11.899 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0150 | Train score: 0.9954 | Val loss: 0.0292 | Val score: 0.9914
+2024-03-27 02:29:12.440 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0133 | Train score: 0.9954 | Val loss: 0.0302 | Val score: 0.9914
+2024-03-27 02:29:12.923 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0133 | Train score: 0.9939 | Val loss: 0.0316 | Val score: 0.9914
+2024-03-27 02:29:13.408 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0143 | Train score: 0.9954 | Val loss: 0.0326 | Val score: 0.9914
+2024-03-27 02:29:14.024 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0230 | Train score: 0.9893 | Val loss: 0.0331 | Val score: 0.9914
+2024-03-27 02:29:14.546 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0120 | Train score: 0.9954 | Val loss: 0.0334 | Val score: 0.9926
+2024-03-27 02:29:15.012 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0114 | Train score: 0.9923 | Val loss: 0.0342 | Val score: 0.9926
+2024-03-27 02:29:15.545 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0082 | Train score: 0.9969 | Val loss: 0.0354 | Val score: 0.9926
+2024-03-27 02:29:16.055 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0191 | Train score: 0.9939 | Val loss: 0.0357 | Val score: 0.9926
+2024-03-27 02:29:16.575 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0403 | Train score: 0.9908 | Val loss: 0.0339 | Val score: 0.9926
+2024-03-27 02:29:17.155 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0048 | Train score: 0.9985 | Val loss: 0.0330 | Val score: 0.9926
+2024-03-27 02:29:17.735 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0066 | Train score: 0.9969 | Val loss: 0.0330 | Val score: 0.9926
+2024-03-27 02:29:18.504 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0065 | Train score: 0.9985 | Val loss: 0.0336 | Val score: 0.9902
+2024-03-27 02:29:19.191 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0131 | Train score: 0.9954 | Val loss: 0.0342 | Val score: 0.9902
+2024-03-27 02:29:19.908 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0105 | Train score: 0.9969 | Val loss: 0.0353 | Val score: 0.9902
+2024-03-27 02:29:20.594 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0107 | Train score: 0.9969 | Val loss: 0.0363 | Val score: 0.9890
+2024-03-27 02:29:21.410 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0112 | Train score: 0.9954 | Val loss: 0.0367 | Val score: 0.9902
+2024-03-27 02:29:22.271 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0141 | Train score: 0.9954 | Val loss: 0.0361 | Val score: 0.9914
+2024-03-27 02:29:23.292 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0087 | Train score: 0.9969 | Val loss: 0.0356 | Val score: 0.9914
+2024-03-27 02:29:24.266 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0122 | Train score: 0.9954 | Val loss: 0.0348 | Val score: 0.9914
+2024-03-27 02:29:25.177 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0053 | Train score: 0.9969 | Val loss: 0.0340 | Val score: 0.9914
+2024-03-27 02:29:26.196 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0295 | Train score: 0.9923 | Val loss: 0.0314 | Val score: 0.9914
+2024-03-27 02:29:27.105 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0095 | Train score: 0.9969 | Val loss: 0.0294 | Val score: 0.9926
+2024-03-27 02:29:28.129 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0172 | Train score: 0.9923 | Val loss: 0.0286 | Val score: 0.9926
+2024-03-27 02:29:29.070 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0161 | Train score: 0.9923 | Val loss: 0.0283 | Val score: 0.9926
+2024-03-27 02:29:30.056 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0078 | Train score: 0.9954 | Val loss: 0.0286 | Val score: 0.9926
+2024-03-27 02:29:30.940 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0064 | Train score: 0.9985 | Val loss: 0.0291 | Val score: 0.9902
+2024-03-27 02:29:31.789 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0080 | Train score: 0.9985 | Val loss: 0.0298 | Val score: 0.9902
+2024-03-27 02:29:32.639 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0055 | Train score: 0.9985 | Val loss: 0.0308 | Val score: 0.9902
+2024-03-27 02:29:33.574 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0075 | Train score: 0.9985 | Val loss: 0.0316 | Val score: 0.9890
+2024-03-27 02:29:34.547 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0054 | Train score: 1.0000 | Val loss: 0.0326 | Val score: 0.9890
+2024-03-27 02:29:35.261 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0027 | Train score: 0.9985 | Val loss: 0.0336 | Val score: 0.9890
+2024-03-27 02:29:35.261 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:29:38.351 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_1 :: train: 0.9971, val: 0.9961, test: 0.9961
+2024-03-27 02:29:38.711 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 3/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:29:50.763 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0181 | Val score: 0.9939
+2024-03-27 02:29:57.922 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0229 | Train score: 0.9893 | Val loss: 0.0184 | Val score: 0.9951
+2024-03-27 02:29:58.178 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0204 | Train score: 0.9923 | Val loss: 0.0191 | Val score: 0.9951
+2024-03-27 02:29:58.413 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0240 | Train score: 0.9939 | Val loss: 0.0187 | Val score: 0.9951
+2024-03-27 02:29:58.515 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0227 | Train score: 0.9923 | Val loss: 0.0180 | Val score: 0.9951
+2024-03-27 02:30:05.522 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0249 | Train score: 0.9923 | Val loss: 0.0173 | Val score: 0.9951
+2024-03-27 02:30:13.597 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0329 | Train score: 0.9893 | Val loss: 0.0169 | Val score: 0.9951
+2024-03-27 02:30:22.000 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0238 | Train score: 0.9908 | Val loss: 0.0170 | Val score: 0.9951
+2024-03-27 02:30:22.567 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0227 | Train score: 0.9893 | Val loss: 0.0169 | Val score: 0.9951
+2024-03-27 02:30:29.624 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0329 | Train score: 0.9908 | Val loss: 0.0171 | Val score: 0.9951
+2024-03-27 02:30:30.016 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0149 | Train score: 0.9954 | Val loss: 0.0169 | Val score: 0.9951
+2024-03-27 02:30:37.384 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0234 | Train score: 0.9923 | Val loss: 0.0166 | Val score: 0.9951
+2024-03-27 02:30:46.349 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0196 | Train score: 0.9908 | Val loss: 0.0165 | Val score: 0.9951
+2024-03-27 02:30:52.938 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0182 | Train score: 0.9939 | Val loss: 0.0161 | Val score: 0.9951
+2024-03-27 02:31:00.419 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0232 | Train score: 0.9923 | Val loss: 0.0159 | Val score: 0.9951
+2024-03-27 02:31:09.753 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0139 | Train score: 0.9954 | Val loss: 0.0157 | Val score: 0.9939
+2024-03-27 02:31:17.124 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0212 | Train score: 0.9923 | Val loss: 0.0158 | Val score: 0.9939
+2024-03-27 02:31:17.226 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0150 | Train score: 0.9939 | Val loss: 0.0156 | Val score: 0.9939
+2024-03-27 02:31:25.260 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0191 | Train score: 0.9923 | Val loss: 0.0157 | Val score: 0.9939
+2024-03-27 02:31:25.423 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0108 | Train score: 0.9954 | Val loss: 0.0158 | Val score: 0.9939
+2024-03-27 02:31:25.948 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0167 | Train score: 0.9908 | Val loss: 0.0158 | Val score: 0.9939
+2024-03-27 02:31:26.425 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0100 | Train score: 0.9969 | Val loss: 0.0162 | Val score: 0.9939
+2024-03-27 02:31:26.928 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0156 | Train score: 0.9923 | Val loss: 0.0157 | Val score: 0.9939
+2024-03-27 02:31:27.403 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0146 | Train score: 0.9939 | Val loss: 0.0144 | Val score: 0.9939
+2024-03-27 02:31:32.058 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0120 | Train score: 0.9954 | Val loss: 0.0141 | Val score: 0.9939
+2024-03-27 02:31:37.256 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0160 | Train score: 0.9877 | Val loss: 0.0141 | Val score: 0.9939
+2024-03-27 02:31:41.109 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0065 | Train score: 0.9985 | Val loss: 0.0140 | Val score: 0.9951
+2024-03-27 02:31:50.975 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0095 | Train score: 0.9939 | Val loss: 0.0139 | Val score: 0.9951
+2024-03-27 02:31:58.436 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0072 | Train score: 0.9969 | Val loss: 0.0137 | Val score: 0.9951
+2024-03-27 02:32:05.795 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0116 | Train score: 0.9923 | Val loss: 0.0137 | Val score: 0.9963
+2024-03-27 02:32:13.101 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0091 | Train score: 0.9969 | Val loss: 0.0136 | Val score: 0.9963
+2024-03-27 02:32:20.272 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0133 | Train score: 0.9969 | Val loss: 0.0135 | Val score: 0.9963
+2024-03-27 02:32:28.073 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0146 | Train score: 0.9923 | Val loss: 0.0134 | Val score: 0.9951
+2024-03-27 02:32:38.560 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0076 | Train score: 0.9954 | Val loss: 0.0132 | Val score: 0.9951
+2024-03-27 02:32:46.224 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0132 | Train score: 0.9893 | Val loss: 0.0131 | Val score: 0.9963
+2024-03-27 02:32:53.638 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0117 | Train score: 0.9939 | Val loss: 0.0133 | Val score: 0.9951
+2024-03-27 02:32:53.769 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0093 | Train score: 0.9969 | Val loss: 0.0136 | Val score: 0.9951
+2024-03-27 02:32:53.886 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0095 | Train score: 0.9939 | Val loss: 0.0140 | Val score: 0.9951
+2024-03-27 02:32:54.344 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0043 | Train score: 0.9985 | Val loss: 0.0147 | Val score: 0.9951
+2024-03-27 02:32:54.901 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0121 | Train score: 0.9954 | Val loss: 0.0148 | Val score: 0.9951
+2024-03-27 02:32:55.379 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0028 | Train score: 0.9985 | Val loss: 0.0150 | Val score: 0.9939
+2024-03-27 02:32:55.934 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0037 | Train score: 0.9985 | Val loss: 0.0151 | Val score: 0.9951
+2024-03-27 02:32:56.494 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 042 | Train loss: 0.0028 | Train score: 0.9985 | Val loss: 0.0152 | Val score: 0.9951
+2024-03-27 02:32:57.022 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 043 | Train loss: 0.0042 | Train score: 0.9985 | Val loss: 0.0157 | Val score: 0.9951
+2024-03-27 02:32:57.511 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 044 | Train loss: 0.0029 | Train score: 0.9985 | Val loss: 0.0162 | Val score: 0.9951
+2024-03-27 02:32:57.906 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 045 | Train loss: 0.0014 | Train score: 1.0000 | Val loss: 0.0168 | Val score: 0.9951
+2024-03-27 02:32:58.180 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 046 | Train loss: 0.0103 | Train score: 0.9954 | Val loss: 0.0170 | Val score: 0.9963
+2024-03-27 02:32:58.578 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 047 | Train loss: 0.0050 | Train score: 0.9985 | Val loss: 0.0170 | Val score: 0.9963
+2024-03-27 02:32:58.994 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 048 | Train loss: 0.0029 | Train score: 0.9985 | Val loss: 0.0179 | Val score: 0.9951
+2024-03-27 02:32:59.424 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 049 | Train loss: 0.0112 | Train score: 0.9954 | Val loss: 0.0187 | Val score: 0.9951
+2024-03-27 02:32:59.790 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 050 | Train loss: 0.0011 | Train score: 1.0000 | Val loss: 0.0205 | Val score: 0.9951
+2024-03-27 02:33:00.084 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 051 | Train loss: 0.0005 | Train score: 1.0000 | Val loss: 0.0225 | Val score: 0.9951
+2024-03-27 02:33:00.185 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 052 | Train loss: 0.0013 | Train score: 1.0000 | Val loss: 0.0250 | Val score: 0.9939
+2024-03-27 02:33:00.297 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 053 | Train loss: 0.0002 | Train score: 1.0000 | Val loss: 0.0273 | Val score: 0.9939
+2024-03-27 02:33:00.467 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 054 | Train loss: 0.0041 | Train score: 0.9985 | Val loss: 0.0300 | Val score: 0.9939
+2024-03-27 02:33:00.759 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 055 | Train loss: 0.0040 | Train score: 0.9985 | Val loss: 0.0309 | Val score: 0.9951
+2024-03-27 02:33:01.007 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 056 | Train loss: 0.0061 | Train score: 0.9969 | Val loss: 0.0299 | Val score: 0.9951
+2024-03-27 02:33:01.108 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 057 | Train loss: 0.0025 | Train score: 0.9985 | Val loss: 0.0282 | Val score: 0.9963
+2024-03-27 02:33:01.208 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 058 | Train loss: 0.0010 | Train score: 1.0000 | Val loss: 0.0278 | Val score: 0.9975
+2024-03-27 02:33:01.309 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 059 | Train loss: 0.0065 | Train score: 0.9985 | Val loss: 0.0287 | Val score: 0.9963
+2024-03-27 02:33:01.413 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 060 | Train loss: 0.0031 | Train score: 0.9985 | Val loss: 0.0294 | Val score: 0.9951
+2024-03-27 02:33:01.523 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 061 | Train loss: 0.0010 | Train score: 1.0000 | Val loss: 0.0310 | Val score: 0.9951
+2024-03-27 02:33:01.624 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 062 | Train loss: 0.0023 | Train score: 0.9985 | Val loss: 0.0343 | Val score: 0.9939
+2024-03-27 02:33:01.725 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 063 | Train loss: 0.0003 | Train score: 1.0000 | Val loss: 0.0400 | Val score: 0.9926
+2024-03-27 02:33:01.832 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 064 | Train loss: 0.0056 | Train score: 0.9985 | Val loss: 0.0459 | Val score: 0.9914
+2024-03-27 02:33:01.934 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 065 | Train loss: 0.0105 | Train score: 0.9985 | Val loss: 0.0378 | Val score: 0.9926
+2024-03-27 02:33:02.036 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 066 | Train loss: 0.0014 | Train score: 1.0000 | Val loss: 0.0328 | Val score: 0.9926
+2024-03-27 02:33:02.138 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 067 | Train loss: 0.0040 | Train score: 0.9985 | Val loss: 0.0310 | Val score: 0.9951
+2024-03-27 02:33:02.239 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 068 | Train loss: 0.0045 | Train score: 0.9969 | Val loss: 0.0303 | Val score: 0.9939
+2024-03-27 02:33:02.346 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 069 | Train loss: 0.0062 | Train score: 0.9969 | Val loss: 0.0301 | Val score: 0.9939
+2024-03-27 02:33:02.478 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 070 | Train loss: 0.0027 | Train score: 1.0000 | Val loss: 0.0298 | Val score: 0.9939
+2024-03-27 02:33:02.579 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 071 | Train loss: 0.0121 | Train score: 0.9985 | Val loss: 0.0281 | Val score: 0.9951
+2024-03-27 02:33:02.679 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 072 | Train loss: 0.0025 | Train score: 0.9985 | Val loss: 0.0279 | Val score: 0.9939
+2024-03-27 02:33:02.780 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 073 | Train loss: 0.0023 | Train score: 0.9985 | Val loss: 0.0277 | Val score: 0.9926
+2024-03-27 02:33:02.881 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 074 | Train loss: 0.0058 | Train score: 0.9969 | Val loss: 0.0280 | Val score: 0.9926
+2024-03-27 02:33:02.881 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:33:03.514 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_2 :: train: 1.0000, val: 0.9941, test: 0.9980
+2024-03-27 02:33:03.634 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 4/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:33:11.147 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0158 | Val score: 0.9939
+2024-03-27 02:33:18.792 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0214 | Train score: 0.9908 | Val loss: 0.0173 | Val score: 0.9939
+2024-03-27 02:33:19.048 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0356 | Train score: 0.9908 | Val loss: 0.0173 | Val score: 0.9939
+2024-03-27 02:33:19.350 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0177 | Train score: 0.9969 | Val loss: 0.0173 | Val score: 0.9939
+2024-03-27 02:33:19.619 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0221 | Train score: 0.9893 | Val loss: 0.0180 | Val score: 0.9939
+2024-03-27 02:33:19.871 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0152 | Train score: 0.9939 | Val loss: 0.0186 | Val score: 0.9939
+2024-03-27 02:33:20.194 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0155 | Train score: 0.9954 | Val loss: 0.0190 | Val score: 0.9939
+2024-03-27 02:33:20.480 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0224 | Train score: 0.9908 | Val loss: 0.0200 | Val score: 0.9939
+2024-03-27 02:33:20.796 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0273 | Train score: 0.9939 | Val loss: 0.0196 | Val score: 0.9939
+2024-03-27 02:33:21.020 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0109 | Train score: 0.9969 | Val loss: 0.0194 | Val score: 0.9939
+2024-03-27 02:33:21.290 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0220 | Train score: 0.9923 | Val loss: 0.0188 | Val score: 0.9939
+2024-03-27 02:33:21.529 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0196 | Train score: 0.9939 | Val loss: 0.0184 | Val score: 0.9939
+2024-03-27 02:33:21.777 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0218 | Train score: 0.9923 | Val loss: 0.0183 | Val score: 0.9939
+2024-03-27 02:33:22.126 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0184 | Train score: 0.9923 | Val loss: 0.0182 | Val score: 0.9939
+2024-03-27 02:33:22.368 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0161 | Train score: 0.9954 | Val loss: 0.0184 | Val score: 0.9939
+2024-03-27 02:33:22.629 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0141 | Train score: 0.9969 | Val loss: 0.0189 | Val score: 0.9939
+2024-03-27 02:33:22.913 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0254 | Train score: 0.9923 | Val loss: 0.0201 | Val score: 0.9939
+2024-03-27 02:33:23.158 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0193 | Train score: 0.9954 | Val loss: 0.0215 | Val score: 0.9939
+2024-03-27 02:33:23.394 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0176 | Train score: 0.9939 | Val loss: 0.0227 | Val score: 0.9939
+2024-03-27 02:33:23.671 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0174 | Train score: 0.9939 | Val loss: 0.0245 | Val score: 0.9939
+2024-03-27 02:33:23.784 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0181 | Train score: 0.9923 | Val loss: 0.0259 | Val score: 0.9939
+2024-03-27 02:33:23.886 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0104 | Train score: 0.9969 | Val loss: 0.0272 | Val score: 0.9939
+2024-03-27 02:33:23.987 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0142 | Train score: 0.9954 | Val loss: 0.0282 | Val score: 0.9939
+2024-03-27 02:33:24.101 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0121 | Train score: 0.9985 | Val loss: 0.0279 | Val score: 0.9939
+2024-03-27 02:33:24.216 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0115 | Train score: 0.9969 | Val loss: 0.0269 | Val score: 0.9926
+2024-03-27 02:33:24.318 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0123 | Train score: 0.9939 | Val loss: 0.0278 | Val score: 0.9926
+2024-03-27 02:33:24.424 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0118 | Train score: 0.9969 | Val loss: 0.0265 | Val score: 0.9926
+2024-03-27 02:33:24.563 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0069 | Train score: 0.9985 | Val loss: 0.0249 | Val score: 0.9926
+2024-03-27 02:33:24.704 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0163 | Train score: 0.9923 | Val loss: 0.0225 | Val score: 0.9926
+2024-03-27 02:33:25.020 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0137 | Train score: 0.9954 | Val loss: 0.0215 | Val score: 0.9926
+2024-03-27 02:33:25.367 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0075 | Train score: 0.9985 | Val loss: 0.0217 | Val score: 0.9926
+2024-03-27 02:33:25.713 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0133 | Train score: 0.9939 | Val loss: 0.0216 | Val score: 0.9926
+2024-03-27 02:33:26.116 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0088 | Train score: 0.9969 | Val loss: 0.0219 | Val score: 0.9939
+2024-03-27 02:33:26.435 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0090 | Train score: 0.9954 | Val loss: 0.0227 | Val score: 0.9939
+2024-03-27 02:33:26.815 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0167 | Train score: 0.9939 | Val loss: 0.0231 | Val score: 0.9939
+2024-03-27 02:33:27.120 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0075 | Train score: 0.9969 | Val loss: 0.0233 | Val score: 0.9939
+2024-03-27 02:33:27.496 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0086 | Train score: 0.9954 | Val loss: 0.0238 | Val score: 0.9926
+2024-03-27 02:33:27.864 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0051 | Train score: 0.9985 | Val loss: 0.0248 | Val score: 0.9926
+2024-03-27 02:33:28.239 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0068 | Train score: 0.9969 | Val loss: 0.0257 | Val score: 0.9926
+2024-03-27 02:33:28.523 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0064 | Train score: 0.9969 | Val loss: 0.0271 | Val score: 0.9926
+2024-03-27 02:33:28.916 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0045 | Train score: 0.9985 | Val loss: 0.0296 | Val score: 0.9926
+2024-03-27 02:33:29.312 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0022 | Train score: 0.9985 | Val loss: 0.0326 | Val score: 0.9914
+2024-03-27 02:33:29.318 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:33:31.094 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_3 :: train: 0.9975, val: 0.9922, test: 0.9941
+2024-03-27 02:33:31.287 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 5/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:33:43.708 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0117 | Val score: 0.9963
+2024-03-27 02:33:51.811 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0239 | Train score: 0.9923 | Val loss: 0.0119 | Val score: 0.9963
+2024-03-27 02:33:52.025 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0214 | Train score: 0.9923 | Val loss: 0.0123 | Val score: 0.9963
+2024-03-27 02:33:52.127 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0216 | Train score: 0.9939 | Val loss: 0.0127 | Val score: 0.9963
+2024-03-27 02:33:52.229 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0222 | Train score: 0.9939 | Val loss: 0.0127 | Val score: 0.9963
+2024-03-27 02:33:52.330 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0325 | Train score: 0.9908 | Val loss: 0.0128 | Val score: 0.9963
+2024-03-27 02:33:52.437 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0139 | Train score: 0.9939 | Val loss: 0.0125 | Val score: 0.9963
+2024-03-27 02:33:52.538 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0150 | Train score: 0.9954 | Val loss: 0.0123 | Val score: 0.9963
+2024-03-27 02:33:52.640 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0164 | Train score: 0.9954 | Val loss: 0.0121 | Val score: 0.9963
+2024-03-27 02:33:52.741 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0160 | Train score: 0.9939 | Val loss: 0.0118 | Val score: 0.9963
+2024-03-27 02:33:52.842 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0230 | Train score: 0.9939 | Val loss: 0.0117 | Val score: 0.9963
+2024-03-27 02:34:00.222 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0143 | Train score: 0.9923 | Val loss: 0.0115 | Val score: 0.9963
+2024-03-27 02:34:05.235 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0127 | Train score: 0.9954 | Val loss: 0.0114 | Val score: 0.9963
+2024-03-27 02:34:13.104 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0229 | Train score: 0.9954 | Val loss: 0.0112 | Val score: 0.9963
+2024-03-27 02:34:20.532 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0092 | Train score: 0.9954 | Val loss: 0.0110 | Val score: 0.9963
+2024-03-27 02:34:27.610 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0138 | Train score: 0.9939 | Val loss: 0.0107 | Val score: 0.9963
+2024-03-27 02:34:33.937 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0169 | Train score: 0.9954 | Val loss: 0.0102 | Val score: 0.9963
+2024-03-27 02:34:41.300 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0228 | Train score: 0.9908 | Val loss: 0.0097 | Val score: 0.9963
+2024-03-27 02:34:45.987 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0137 | Train score: 0.9939 | Val loss: 0.0094 | Val score: 0.9963
+2024-03-27 02:34:51.749 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0156 | Train score: 0.9939 | Val loss: 0.0090 | Val score: 0.9963
+2024-03-27 02:34:57.662 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0151 | Train score: 0.9939 | Val loss: 0.0087 | Val score: 0.9963
+2024-03-27 02:35:03.546 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0101 | Train score: 0.9954 | Val loss: 0.0086 | Val score: 0.9963
+2024-03-27 02:35:08.629 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0126 | Train score: 0.9923 | Val loss: 0.0084 | Val score: 0.9963
+2024-03-27 02:35:15.068 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0177 | Train score: 0.9923 | Val loss: 0.0082 | Val score: 0.9963
+2024-03-27 02:35:22.692 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0078 | Train score: 0.9969 | Val loss: 0.0080 | Val score: 0.9963
+2024-03-27 02:35:31.587 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0063 | Train score: 0.9985 | Val loss: 0.0079 | Val score: 0.9963
+2024-03-27 02:35:38.949 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0168 | Train score: 0.9923 | Val loss: 0.0080 | Val score: 0.9963
+2024-03-27 02:35:39.051 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0062 | Train score: 0.9985 | Val loss: 0.0080 | Val score: 0.9963
+2024-03-27 02:35:39.153 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0063 | Train score: 0.9969 | Val loss: 0.0085 | Val score: 0.9963
+2024-03-27 02:35:39.254 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0082 | Train score: 0.9969 | Val loss: 0.0094 | Val score: 0.9963
+2024-03-27 02:35:39.355 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0100 | Train score: 0.9969 | Val loss: 0.0119 | Val score: 0.9963
+2024-03-27 02:35:39.455 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0083 | Train score: 0.9939 | Val loss: 0.0128 | Val score: 0.9963
+2024-03-27 02:35:39.556 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0063 | Train score: 0.9954 | Val loss: 0.0153 | Val score: 0.9963
+2024-03-27 02:35:39.657 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0055 | Train score: 0.9954 | Val loss: 0.0189 | Val score: 0.9963
+2024-03-27 02:35:39.757 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0417 | Train score: 0.9908 | Val loss: 0.0120 | Val score: 0.9963
+2024-03-27 02:35:39.858 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0075 | Train score: 0.9954 | Val loss: 0.0105 | Val score: 0.9963
+2024-03-27 02:35:39.958 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0089 | Train score: 0.9969 | Val loss: 0.0103 | Val score: 0.9963
+2024-03-27 02:35:40.059 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0066 | Train score: 0.9969 | Val loss: 0.0104 | Val score: 0.9963
+2024-03-27 02:35:40.161 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0049 | Train score: 0.9985 | Val loss: 0.0106 | Val score: 0.9963
+2024-03-27 02:35:40.416 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0048 | Train score: 1.0000 | Val loss: 0.0108 | Val score: 0.9963
+2024-03-27 02:35:40.775 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0032 | Train score: 1.0000 | Val loss: 0.0109 | Val score: 0.9963
+2024-03-27 02:35:41.023 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0096 | Train score: 0.9985 | Val loss: 0.0110 | Val score: 0.9963
+2024-03-27 02:35:41.309 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 042 | Train loss: 0.0059 | Train score: 1.0000 | Val loss: 0.0111 | Val score: 0.9963
+2024-03-27 02:35:41.662 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 043 | Train loss: 0.0054 | Train score: 0.9985 | Val loss: 0.0112 | Val score: 0.9963
+2024-03-27 02:35:42.029 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 044 | Train loss: 0.0073 | Train score: 0.9969 | Val loss: 0.0116 | Val score: 0.9963
+2024-03-27 02:35:42.353 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 045 | Train loss: 0.0063 | Train score: 0.9969 | Val loss: 0.0119 | Val score: 0.9963
+2024-03-27 02:35:42.677 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 046 | Train loss: 0.0023 | Train score: 1.0000 | Val loss: 0.0122 | Val score: 0.9963
+2024-03-27 02:35:43.000 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 047 | Train loss: 0.0024 | Train score: 1.0000 | Val loss: 0.0130 | Val score: 0.9963
+2024-03-27 02:35:43.222 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 048 | Train loss: 0.0007 | Train score: 1.0000 | Val loss: 0.0139 | Val score: 0.9963
+2024-03-27 02:35:43.524 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 049 | Train loss: 0.0015 | Train score: 1.0000 | Val loss: 0.0149 | Val score: 0.9963
+2024-03-27 02:35:43.752 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 050 | Train loss: 0.0006 | Train score: 1.0000 | Val loss: 0.0157 | Val score: 0.9963
+2024-03-27 02:35:43.971 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 051 | Train loss: 0.0006 | Train score: 1.0000 | Val loss: 0.0168 | Val score: 0.9963
+2024-03-27 02:35:44.204 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 052 | Train loss: 0.0007 | Train score: 1.0000 | Val loss: 0.0178 | Val score: 0.9963
+2024-03-27 02:35:44.490 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 053 | Train loss: 0.0006 | Train score: 1.0000 | Val loss: 0.0186 | Val score: 0.9963
+2024-03-27 02:35:44.725 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 054 | Train loss: 0.0038 | Train score: 0.9985 | Val loss: 0.0177 | Val score: 0.9963
+2024-03-27 02:35:45.032 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 055 | Train loss: 0.0004 | Train score: 1.0000 | Val loss: 0.0180 | Val score: 0.9963
+2024-03-27 02:35:45.321 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 056 | Train loss: 0.0063 | Train score: 0.9969 | Val loss: 0.0172 | Val score: 0.9963
+2024-03-27 02:35:45.643 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 057 | Train loss: 0.0078 | Train score: 0.9969 | Val loss: 0.0194 | Val score: 0.9963
+2024-03-27 02:35:45.967 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 058 | Train loss: 0.0041 | Train score: 0.9985 | Val loss: 0.0276 | Val score: 0.9951
+2024-03-27 02:35:46.300 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 059 | Train loss: 0.0227 | Train score: 0.9908 | Val loss: 0.0174 | Val score: 0.9963
+2024-03-27 02:35:46.622 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 060 | Train loss: 0.0011 | Train score: 1.0000 | Val loss: 0.0119 | Val score: 0.9951
+2024-03-27 02:35:47.063 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 061 | Train loss: 0.0024 | Train score: 1.0000 | Val loss: 0.0102 | Val score: 0.9951
+2024-03-27 02:35:47.545 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 062 | Train loss: 0.0085 | Train score: 0.9969 | Val loss: 0.0099 | Val score: 0.9951
+2024-03-27 02:35:48.012 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 063 | Train loss: 0.0158 | Train score: 0.9939 | Val loss: 0.0106 | Val score: 0.9951
+2024-03-27 02:35:48.504 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 064 | Train loss: 0.0134 | Train score: 0.9954 | Val loss: 0.0111 | Val score: 0.9963
+2024-03-27 02:35:48.790 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 065 | Train loss: 0.0015 | Train score: 0.9985 | Val loss: 0.0118 | Val score: 0.9963
+2024-03-27 02:35:48.796 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:35:50.019 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_4 :: train: 1.0000, val: 0.9922, test: 0.9922
+2024-03-27 02:35:50.164 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 6/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:36:00.309 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0214 | Val score: 0.9926
+2024-03-27 02:36:08.217 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0179 | Train score: 0.9939 | Val loss: 0.0219 | Val score: 0.9926
+2024-03-27 02:36:08.535 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0121 | Train score: 0.9954 | Val loss: 0.0235 | Val score: 0.9926
+2024-03-27 02:36:08.693 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0156 | Train score: 0.9939 | Val loss: 0.0256 | Val score: 0.9939
+2024-03-27 02:36:08.794 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0154 | Train score: 0.9954 | Val loss: 0.0253 | Val score: 0.9926
+2024-03-27 02:36:08.911 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0217 | Train score: 0.9939 | Val loss: 0.0248 | Val score: 0.9926
+2024-03-27 02:36:09.018 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0304 | Train score: 0.9908 | Val loss: 0.0232 | Val score: 0.9939
+2024-03-27 02:36:09.128 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0093 | Train score: 0.9969 | Val loss: 0.0225 | Val score: 0.9939
+2024-03-27 02:36:09.237 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0116 | Train score: 0.9969 | Val loss: 0.0220 | Val score: 0.9939
+2024-03-27 02:36:09.345 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0163 | Train score: 0.9923 | Val loss: 0.0217 | Val score: 0.9939
+2024-03-27 02:36:09.453 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0085 | Train score: 0.9969 | Val loss: 0.0217 | Val score: 0.9926
+2024-03-27 02:36:09.554 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0070 | Train score: 1.0000 | Val loss: 0.0218 | Val score: 0.9926
+2024-03-27 02:36:09.656 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0126 | Train score: 0.9969 | Val loss: 0.0221 | Val score: 0.9939
+2024-03-27 02:36:09.764 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0169 | Train score: 0.9954 | Val loss: 0.0223 | Val score: 0.9939
+2024-03-27 02:36:09.868 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0094 | Train score: 0.9969 | Val loss: 0.0227 | Val score: 0.9939
+2024-03-27 02:36:10.105 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0175 | Train score: 0.9939 | Val loss: 0.0229 | Val score: 0.9939
+2024-03-27 02:36:10.363 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0125 | Train score: 0.9939 | Val loss: 0.0234 | Val score: 0.9939
+2024-03-27 02:36:10.591 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0106 | Train score: 0.9954 | Val loss: 0.0237 | Val score: 0.9939
+2024-03-27 02:36:10.820 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0034 | Train score: 1.0000 | Val loss: 0.0245 | Val score: 0.9939
+2024-03-27 02:36:11.071 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0155 | Train score: 0.9954 | Val loss: 0.0249 | Val score: 0.9939
+2024-03-27 02:36:11.301 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0128 | Train score: 0.9939 | Val loss: 0.0255 | Val score: 0.9939
+2024-03-27 02:36:11.552 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0143 | Train score: 0.9939 | Val loss: 0.0265 | Val score: 0.9926
+2024-03-27 02:36:11.786 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0070 | Train score: 0.9969 | Val loss: 0.0280 | Val score: 0.9926
+2024-03-27 02:36:12.034 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0043 | Train score: 0.9985 | Val loss: 0.0300 | Val score: 0.9926
+2024-03-27 02:36:12.287 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0107 | Train score: 0.9954 | Val loss: 0.0319 | Val score: 0.9926
+2024-03-27 02:36:12.526 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0036 | Train score: 1.0000 | Val loss: 0.0342 | Val score: 0.9926
+2024-03-27 02:36:12.774 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0035 | Train score: 1.0000 | Val loss: 0.0368 | Val score: 0.9926
+2024-03-27 02:36:13.041 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0117 | Train score: 0.9954 | Val loss: 0.0374 | Val score: 0.9926
+2024-03-27 02:36:13.330 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0074 | Train score: 0.9969 | Val loss: 0.0375 | Val score: 0.9926
+2024-03-27 02:36:13.588 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0233 | Train score: 0.9954 | Val loss: 0.0346 | Val score: 0.9926
+2024-03-27 02:36:13.841 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0037 | Train score: 1.0000 | Val loss: 0.0325 | Val score: 0.9926
+2024-03-27 02:36:14.063 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0019 | Train score: 1.0000 | Val loss: 0.0312 | Val score: 0.9926
+2024-03-27 02:36:14.291 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0103 | Train score: 0.9969 | Val loss: 0.0296 | Val score: 0.9926
+2024-03-27 02:36:14.522 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0039 | Train score: 1.0000 | Val loss: 0.0290 | Val score: 0.9926
+2024-03-27 02:36:14.816 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0020 | Train score: 1.0000 | Val loss: 0.0289 | Val score: 0.9926
+2024-03-27 02:36:15.076 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0097 | Train score: 0.9954 | Val loss: 0.0292 | Val score: 0.9926
+2024-03-27 02:36:15.459 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0044 | Train score: 0.9985 | Val loss: 0.0296 | Val score: 0.9926
+2024-03-27 02:36:15.757 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0066 | Train score: 0.9985 | Val loss: 0.0305 | Val score: 0.9926
+2024-03-27 02:36:16.077 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0024 | Train score: 0.9985 | Val loss: 0.0313 | Val score: 0.9939
+2024-03-27 02:36:16.338 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0039 | Train score: 0.9985 | Val loss: 0.0319 | Val score: 0.9939
+2024-03-27 02:36:16.626 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0012 | Train score: 1.0000 | Val loss: 0.0331 | Val score: 0.9939
+2024-03-27 02:36:16.856 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0014 | Train score: 1.0000 | Val loss: 0.0347 | Val score: 0.9939
+2024-03-27 02:36:17.144 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 042 | Train loss: 0.0377 | Train score: 0.9923 | Val loss: 0.0361 | Val score: 0.9939
+2024-03-27 02:36:17.384 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 043 | Train loss: 0.0032 | Train score: 0.9985 | Val loss: 0.0371 | Val score: 0.9926
+2024-03-27 02:36:17.721 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 044 | Train loss: 0.0106 | Train score: 0.9939 | Val loss: 0.0334 | Val score: 0.9926
+2024-03-27 02:36:18.032 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 045 | Train loss: 0.0061 | Train score: 0.9985 | Val loss: 0.0310 | Val score: 0.9951
+2024-03-27 02:36:18.299 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 046 | Train loss: 0.0017 | Train score: 1.0000 | Val loss: 0.0297 | Val score: 0.9951
+2024-03-27 02:36:18.530 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 047 | Train loss: 0.0016 | Train score: 1.0000 | Val loss: 0.0289 | Val score: 0.9951
+2024-03-27 02:36:18.747 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 048 | Train loss: 0.0012 | Train score: 1.0000 | Val loss: 0.0286 | Val score: 0.9951
+2024-03-27 02:36:18.974 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 049 | Train loss: 0.0067 | Train score: 0.9969 | Val loss: 0.0286 | Val score: 0.9939
+2024-03-27 02:36:18.974 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:36:20.026 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_5 :: train: 0.9975, val: 0.9941, test: 0.9941
+2024-03-27 02:36:20.153 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 7/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:36:28.811 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0116 | Val score: 0.9963
+2024-03-27 02:36:39.486 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0200 | Train score: 0.9923 | Val loss: 0.0117 | Val score: 0.9963
+2024-03-27 02:36:39.773 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0163 | Train score: 0.9954 | Val loss: 0.0112 | Val score: 0.9963
+2024-03-27 02:36:47.648 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0182 | Train score: 0.9939 | Val loss: 0.0112 | Val score: 0.9963
+2024-03-27 02:36:55.011 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0199 | Train score: 0.9939 | Val loss: 0.0111 | Val score: 0.9963
+2024-03-27 02:37:02.245 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0178 | Train score: 0.9939 | Val loss: 0.0110 | Val score: 0.9963
+2024-03-27 02:37:10.607 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0181 | Train score: 0.9923 | Val loss: 0.0109 | Val score: 0.9963
+2024-03-27 02:37:19.715 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0160 | Train score: 0.9954 | Val loss: 0.0112 | Val score: 0.9963
+2024-03-27 02:37:19.882 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0346 | Train score: 0.9893 | Val loss: 0.0115 | Val score: 0.9963
+2024-03-27 02:37:19.983 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0146 | Train score: 0.9939 | Val loss: 0.0117 | Val score: 0.9951
+2024-03-27 02:37:20.245 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0286 | Train score: 0.9923 | Val loss: 0.0121 | Val score: 0.9951
+2024-03-27 02:37:20.391 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0083 | Train score: 0.9969 | Val loss: 0.0124 | Val score: 0.9951
+2024-03-27 02:37:20.520 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0203 | Train score: 0.9923 | Val loss: 0.0126 | Val score: 0.9951
+2024-03-27 02:37:20.621 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0173 | Train score: 0.9939 | Val loss: 0.0128 | Val score: 0.9951
+2024-03-27 02:37:20.722 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0128 | Train score: 0.9954 | Val loss: 0.0127 | Val score: 0.9951
+2024-03-27 02:37:20.922 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0156 | Train score: 0.9954 | Val loss: 0.0125 | Val score: 0.9951
+2024-03-27 02:37:21.238 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0128 | Train score: 0.9969 | Val loss: 0.0124 | Val score: 0.9951
+2024-03-27 02:37:21.486 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0121 | Train score: 0.9969 | Val loss: 0.0131 | Val score: 0.9951
+2024-03-27 02:37:21.713 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0049 | Train score: 0.9969 | Val loss: 0.0140 | Val score: 0.9951
+2024-03-27 02:37:21.932 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0175 | Train score: 0.9969 | Val loss: 0.0145 | Val score: 0.9951
+2024-03-27 02:37:22.034 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0076 | Train score: 0.9969 | Val loss: 0.0150 | Val score: 0.9951
+2024-03-27 02:37:22.135 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0117 | Train score: 0.9954 | Val loss: 0.0153 | Val score: 0.9951
+2024-03-27 02:37:22.237 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0190 | Train score: 0.9923 | Val loss: 0.0154 | Val score: 0.9951
+2024-03-27 02:37:22.338 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0154 | Train score: 0.9923 | Val loss: 0.0157 | Val score: 0.9926
+2024-03-27 02:37:22.451 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0067 | Train score: 0.9969 | Val loss: 0.0161 | Val score: 0.9926
+2024-03-27 02:37:22.552 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0127 | Train score: 0.9954 | Val loss: 0.0168 | Val score: 0.9926
+2024-03-27 02:37:22.653 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0076 | Train score: 0.9954 | Val loss: 0.0176 | Val score: 0.9926
+2024-03-27 02:37:22.755 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0059 | Train score: 0.9985 | Val loss: 0.0182 | Val score: 0.9926
+2024-03-27 02:37:22.861 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0127 | Train score: 0.9969 | Val loss: 0.0189 | Val score: 0.9926
+2024-03-27 02:37:22.962 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0052 | Train score: 1.0000 | Val loss: 0.0194 | Val score: 0.9926
+2024-03-27 02:37:23.064 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0092 | Train score: 0.9969 | Val loss: 0.0211 | Val score: 0.9926
+2024-03-27 02:37:23.165 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0120 | Train score: 0.9939 | Val loss: 0.0232 | Val score: 0.9914
+2024-03-27 02:37:23.267 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0074 | Train score: 0.9969 | Val loss: 0.0259 | Val score: 0.9914
+2024-03-27 02:37:23.373 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0097 | Train score: 0.9954 | Val loss: 0.0292 | Val score: 0.9914
+2024-03-27 02:37:23.474 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0033 | Train score: 0.9985 | Val loss: 0.0327 | Val score: 0.9926
+2024-03-27 02:37:23.575 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0008 | Train score: 1.0000 | Val loss: 0.0362 | Val score: 0.9926
+2024-03-27 02:37:23.676 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0124 | Train score: 0.9969 | Val loss: 0.0393 | Val score: 0.9926
+2024-03-27 02:37:23.778 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0047 | Train score: 0.9985 | Val loss: 0.0423 | Val score: 0.9926
+2024-03-27 02:37:23.879 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0036 | Train score: 1.0000 | Val loss: 0.0451 | Val score: 0.9926
+2024-03-27 02:37:23.980 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0096 | Train score: 0.9939 | Val loss: 0.0440 | Val score: 0.9926
+2024-03-27 02:37:24.144 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0066 | Train score: 0.9969 | Val loss: 0.0423 | Val score: 0.9926
+2024-03-27 02:37:24.370 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0049 | Train score: 0.9985 | Val loss: 0.0405 | Val score: 0.9926
+2024-03-27 02:37:24.572 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 042 | Train loss: 0.0058 | Train score: 0.9969 | Val loss: 0.0390 | Val score: 0.9926
+2024-03-27 02:37:24.673 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 043 | Train loss: 0.0020 | Train score: 1.0000 | Val loss: 0.0378 | Val score: 0.9926
+2024-03-27 02:37:24.775 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 044 | Train loss: 0.0036 | Train score: 1.0000 | Val loss: 0.0370 | Val score: 0.9926
+2024-03-27 02:37:24.876 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 045 | Train loss: 0.0037 | Train score: 0.9985 | Val loss: 0.0366 | Val score: 0.9914
+2024-03-27 02:37:24.977 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 046 | Train loss: 0.0027 | Train score: 1.0000 | Val loss: 0.0360 | Val score: 0.9914
+2024-03-27 02:37:24.977 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:37:25.613 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_6 :: train: 0.9983, val: 0.9961, test: 0.9941
+2024-03-27 02:37:25.731 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 8/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:37:34.396 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0280 | Val score: 0.9890
+2024-03-27 02:37:43.945 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0185 | Train score: 0.9954 | Val loss: 0.0318 | Val score: 0.9902
+2024-03-27 02:37:44.070 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0170 | Train score: 0.9908 | Val loss: 0.0345 | Val score: 0.9902
+2024-03-27 02:37:44.171 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0108 | Train score: 0.9969 | Val loss: 0.0370 | Val score: 0.9902
+2024-03-27 02:37:44.273 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0149 | Train score: 0.9954 | Val loss: 0.0389 | Val score: 0.9902
+2024-03-27 02:37:44.378 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0106 | Train score: 0.9954 | Val loss: 0.0409 | Val score: 0.9902
+2024-03-27 02:37:44.479 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0089 | Train score: 0.9985 | Val loss: 0.0415 | Val score: 0.9902
+2024-03-27 02:37:44.581 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0066 | Train score: 0.9985 | Val loss: 0.0434 | Val score: 0.9902
+2024-03-27 02:37:44.684 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0110 | Train score: 0.9969 | Val loss: 0.0439 | Val score: 0.9902
+2024-03-27 02:37:44.786 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0074 | Train score: 0.9969 | Val loss: 0.0447 | Val score: 0.9902
+2024-03-27 02:37:44.887 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0171 | Train score: 0.9985 | Val loss: 0.0422 | Val score: 0.9890
+2024-03-27 02:37:44.989 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0243 | Train score: 0.9939 | Val loss: 0.0383 | Val score: 0.9890
+2024-03-27 02:37:45.090 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0025 | Train score: 1.0000 | Val loss: 0.0360 | Val score: 0.9890
+2024-03-27 02:37:45.192 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0264 | Train score: 0.9908 | Val loss: 0.0335 | Val score: 0.9890
+2024-03-27 02:37:45.293 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0239 | Train score: 0.9923 | Val loss: 0.0311 | Val score: 0.9890
+2024-03-27 02:37:45.394 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0183 | Train score: 0.9954 | Val loss: 0.0296 | Val score: 0.9890
+2024-03-27 02:37:45.495 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0133 | Train score: 0.9954 | Val loss: 0.0290 | Val score: 0.9877
+2024-03-27 02:37:45.597 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0084 | Train score: 0.9969 | Val loss: 0.0289 | Val score: 0.9877
+2024-03-27 02:37:45.698 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0144 | Train score: 0.9954 | Val loss: 0.0293 | Val score: 0.9877
+2024-03-27 02:37:45.799 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0071 | Train score: 1.0000 | Val loss: 0.0304 | Val score: 0.9877
+2024-03-27 02:37:45.900 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0115 | Train score: 0.9969 | Val loss: 0.0330 | Val score: 0.9877
+2024-03-27 02:37:46.002 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0113 | Train score: 0.9954 | Val loss: 0.0357 | Val score: 0.9877
+2024-03-27 02:37:46.103 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0023 | Train score: 1.0000 | Val loss: 0.0379 | Val score: 0.9865
+2024-03-27 02:37:46.204 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0083 | Train score: 0.9985 | Val loss: 0.0384 | Val score: 0.9877
+2024-03-27 02:37:46.305 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0031 | Train score: 0.9985 | Val loss: 0.0381 | Val score: 0.9877
+2024-03-27 02:37:46.407 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0170 | Train score: 0.9939 | Val loss: 0.0352 | Val score: 0.9877
+2024-03-27 02:37:46.508 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0164 | Train score: 0.9954 | Val loss: 0.0332 | Val score: 0.9902
+2024-03-27 02:37:46.609 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0124 | Train score: 0.9954 | Val loss: 0.0321 | Val score: 0.9902
+2024-03-27 02:37:46.711 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0098 | Train score: 0.9954 | Val loss: 0.0311 | Val score: 0.9902
+2024-03-27 02:37:46.812 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0103 | Train score: 0.9954 | Val loss: 0.0306 | Val score: 0.9914
+2024-03-27 02:37:46.913 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0040 | Train score: 0.9985 | Val loss: 0.0318 | Val score: 0.9914
+2024-03-27 02:37:47.015 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0091 | Train score: 0.9969 | Val loss: 0.0331 | Val score: 0.9926
+2024-03-27 02:37:47.116 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0073 | Train score: 0.9985 | Val loss: 0.0352 | Val score: 0.9926
+2024-03-27 02:37:47.218 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0080 | Train score: 0.9985 | Val loss: 0.0399 | Val score: 0.9902
+2024-03-27 02:37:47.320 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0036 | Train score: 0.9985 | Val loss: 0.0439 | Val score: 0.9902
+2024-03-27 02:37:47.421 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0043 | Train score: 0.9969 | Val loss: 0.0444 | Val score: 0.9902
+2024-03-27 02:37:47.523 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0243 | Train score: 0.9939 | Val loss: 0.0411 | Val score: 0.9914
+2024-03-27 02:37:47.624 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0006 | Train score: 1.0000 | Val loss: 0.0388 | Val score: 0.9902
+2024-03-27 02:37:47.726 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0059 | Train score: 0.9985 | Val loss: 0.0369 | Val score: 0.9914
+2024-03-27 02:37:47.828 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0013 | Train score: 1.0000 | Val loss: 0.0361 | Val score: 0.9914
+2024-03-27 02:37:47.929 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0011 | Train score: 1.0000 | Val loss: 0.0362 | Val score: 0.9914
+2024-03-27 02:37:48.031 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0041 | Train score: 0.9985 | Val loss: 0.0359 | Val score: 0.9914
+2024-03-27 02:37:48.133 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 042 | Train loss: 0.0020 | Train score: 1.0000 | Val loss: 0.0364 | Val score: 0.9902
+2024-03-27 02:37:48.252 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 043 | Train loss: 0.0147 | Train score: 0.9969 | Val loss: 0.0353 | Val score: 0.9914
+2024-03-27 02:37:48.353 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 044 | Train loss: 0.0038 | Train score: 0.9985 | Val loss: 0.0347 | Val score: 0.9914
+2024-03-27 02:37:48.455 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 045 | Train loss: 0.0106 | Train score: 0.9985 | Val loss: 0.0342 | Val score: 0.9926
+2024-03-27 02:37:48.557 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 046 | Train loss: 0.0024 | Train score: 1.0000 | Val loss: 0.0345 | Val score: 0.9926
+2024-03-27 02:37:48.659 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 047 | Train loss: 0.0106 | Train score: 0.9969 | Val loss: 0.0343 | Val score: 0.9914
+2024-03-27 02:37:48.760 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 048 | Train loss: 0.0061 | Train score: 0.9985 | Val loss: 0.0356 | Val score: 0.9877
+2024-03-27 02:37:48.861 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 049 | Train loss: 0.0047 | Train score: 1.0000 | Val loss: 0.0393 | Val score: 0.9877
+2024-03-27 02:37:48.961 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 050 | Train loss: 0.0017 | Train score: 1.0000 | Val loss: 0.0434 | Val score: 0.9877
+2024-03-27 02:37:49.084 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 051 | Train loss: 0.0035 | Train score: 0.9985 | Val loss: 0.0464 | Val score: 0.9890
+2024-03-27 02:37:49.415 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 052 | Train loss: 0.0090 | Train score: 0.9969 | Val loss: 0.0471 | Val score: 0.9890
+2024-03-27 02:37:49.656 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 053 | Train loss: 0.0042 | Train score: 0.9969 | Val loss: 0.0484 | Val score: 0.9877
+2024-03-27 02:37:50.044 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 054 | Train loss: 0.0037 | Train score: 0.9985 | Val loss: 0.0500 | Val score: 0.9877
+2024-03-27 02:37:50.320 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 055 | Train loss: 0.0046 | Train score: 0.9985 | Val loss: 0.0511 | Val score: 0.9877
+2024-03-27 02:37:50.580 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 056 | Train loss: 0.0090 | Train score: 0.9969 | Val loss: 0.0511 | Val score: 0.9877
+2024-03-27 02:37:50.580 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:37:51.237 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_7 :: train: 0.9975, val: 0.9922, test: 0.9980
+2024-03-27 02:37:51.355 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 9/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:38:00.174 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0173 | Val score: 0.9926
+2024-03-27 02:38:06.756 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0138 | Train score: 0.9969 | Val loss: 0.0181 | Val score: 0.9914
+2024-03-27 02:38:07.374 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0210 | Train score: 0.9923 | Val loss: 0.0184 | Val score: 0.9914
+2024-03-27 02:38:07.853 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0159 | Train score: 0.9954 | Val loss: 0.0188 | Val score: 0.9902
+2024-03-27 02:38:08.447 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0307 | Train score: 0.9893 | Val loss: 0.0190 | Val score: 0.9914
+2024-03-27 02:38:08.907 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0268 | Train score: 0.9923 | Val loss: 0.0188 | Val score: 0.9914
+2024-03-27 02:38:09.293 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0150 | Train score: 0.9954 | Val loss: 0.0189 | Val score: 0.9890
+2024-03-27 02:38:09.746 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0190 | Train score: 0.9923 | Val loss: 0.0192 | Val score: 0.9890
+2024-03-27 02:38:10.178 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0045 | Train score: 1.0000 | Val loss: 0.0194 | Val score: 0.9890
+2024-03-27 02:38:10.682 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0144 | Train score: 0.9954 | Val loss: 0.0197 | Val score: 0.9890
+2024-03-27 02:38:11.202 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0137 | Train score: 0.9954 | Val loss: 0.0200 | Val score: 0.9890
+2024-03-27 02:38:11.675 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0219 | Train score: 0.9939 | Val loss: 0.0206 | Val score: 0.9890
+2024-03-27 02:38:12.087 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0194 | Train score: 0.9939 | Val loss: 0.0211 | Val score: 0.9890
+2024-03-27 02:38:12.502 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0069 | Train score: 0.9985 | Val loss: 0.0216 | Val score: 0.9890
+2024-03-27 02:38:13.034 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0139 | Train score: 0.9954 | Val loss: 0.0221 | Val score: 0.9890
+2024-03-27 02:38:13.514 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0179 | Train score: 0.9908 | Val loss: 0.0227 | Val score: 0.9890
+2024-03-27 02:38:14.030 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0209 | Train score: 0.9908 | Val loss: 0.0234 | Val score: 0.9890
+2024-03-27 02:38:14.503 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0139 | Train score: 0.9954 | Val loss: 0.0247 | Val score: 0.9890
+2024-03-27 02:38:14.833 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0192 | Train score: 0.9939 | Val loss: 0.0254 | Val score: 0.9877
+2024-03-27 02:38:15.264 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0092 | Train score: 0.9985 | Val loss: 0.0268 | Val score: 0.9890
+2024-03-27 02:38:15.574 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0115 | Train score: 0.9954 | Val loss: 0.0280 | Val score: 0.9890
+2024-03-27 02:38:15.813 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0058 | Train score: 0.9969 | Val loss: 0.0294 | Val score: 0.9902
+2024-03-27 02:38:16.082 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0132 | Train score: 0.9954 | Val loss: 0.0300 | Val score: 0.9914
+2024-03-27 02:38:16.368 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0212 | Train score: 0.9923 | Val loss: 0.0302 | Val score: 0.9914
+2024-03-27 02:38:16.637 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0068 | Train score: 0.9954 | Val loss: 0.0301 | Val score: 0.9914
+2024-03-27 02:38:16.900 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0051 | Train score: 0.9985 | Val loss: 0.0299 | Val score: 0.9914
+2024-03-27 02:38:17.179 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0086 | Train score: 0.9954 | Val loss: 0.0290 | Val score: 0.9914
+2024-03-27 02:38:17.459 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0113 | Train score: 0.9969 | Val loss: 0.0279 | Val score: 0.9914
+2024-03-27 02:38:17.701 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0149 | Train score: 0.9939 | Val loss: 0.0272 | Val score: 0.9890
+2024-03-27 02:38:17.931 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0040 | Train score: 1.0000 | Val loss: 0.0274 | Val score: 0.9902
+2024-03-27 02:38:18.162 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0075 | Train score: 0.9969 | Val loss: 0.0279 | Val score: 0.9890
+2024-03-27 02:38:18.414 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0047 | Train score: 0.9969 | Val loss: 0.0296 | Val score: 0.9902
+2024-03-27 02:38:18.681 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0130 | Train score: 0.9939 | Val loss: 0.0324 | Val score: 0.9902
+2024-03-27 02:38:18.971 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0162 | Train score: 0.9954 | Val loss: 0.0326 | Val score: 0.9902
+2024-03-27 02:38:19.220 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0055 | Train score: 0.9985 | Val loss: 0.0349 | Val score: 0.9902
+2024-03-27 02:38:19.463 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0030 | Train score: 0.9985 | Val loss: 0.0372 | Val score: 0.9902
+2024-03-27 02:38:19.701 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0088 | Train score: 0.9969 | Val loss: 0.0375 | Val score: 0.9902
+2024-03-27 02:38:19.948 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0015 | Train score: 1.0000 | Val loss: 0.0379 | Val score: 0.9902
+2024-03-27 02:38:20.240 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0023 | Train score: 0.9985 | Val loss: 0.0386 | Val score: 0.9902
+2024-03-27 02:38:20.529 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0063 | Train score: 0.9969 | Val loss: 0.0401 | Val score: 0.9902
+2024-03-27 02:38:20.759 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0049 | Train score: 0.9985 | Val loss: 0.0416 | Val score: 0.9902
+2024-03-27 02:38:20.883 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0058 | Train score: 0.9969 | Val loss: 0.0424 | Val score: 0.9902
+2024-03-27 02:38:20.899 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:38:22.239 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_8 :: train: 0.9975, val: 0.9941, test: 0.9922
+2024-03-27 02:38:22.361 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 10/10 of Satellite (id=167211) with FOUNDATION doing CLASSIFICATION
+2024-03-27 02:38:35.939 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 0.0173 | Val score: 0.9939
+2024-03-27 02:38:43.699 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 001 | Train loss: 0.0139 | Train score: 0.9954 | Val loss: 0.0179 | Val score: 0.9939
+2024-03-27 02:38:44.086 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 002 | Train loss: 0.0281 | Train score: 0.9923 | Val loss: 0.0180 | Val score: 0.9939
+2024-03-27 02:38:44.317 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 003 | Train loss: 0.0103 | Train score: 0.9969 | Val loss: 0.0181 | Val score: 0.9939
+2024-03-27 02:38:44.608 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 004 | Train loss: 0.0217 | Train score: 0.9954 | Val loss: 0.0180 | Val score: 0.9939
+2024-03-27 02:38:44.846 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 005 | Train loss: 0.0180 | Train score: 0.9954 | Val loss: 0.0174 | Val score: 0.9939
+2024-03-27 02:38:45.107 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 006 | Train loss: 0.0068 | Train score: 0.9969 | Val loss: 0.0169 | Val score: 0.9939
+2024-03-27 02:38:53.747 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 007 | Train loss: 0.0143 | Train score: 0.9954 | Val loss: 0.0166 | Val score: 0.9939
+2024-03-27 02:39:00.624 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 008 | Train loss: 0.0140 | Train score: 0.9939 | Val loss: 0.0164 | Val score: 0.9926
+2024-03-27 02:39:08.426 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 009 | Train loss: 0.0206 | Train score: 0.9908 | Val loss: 0.0163 | Val score: 0.9939
+2024-03-27 02:39:17.700 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 010 | Train loss: 0.0103 | Train score: 0.9969 | Val loss: 0.0166 | Val score: 0.9926
+2024-03-27 02:39:17.926 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 011 | Train loss: 0.0167 | Train score: 0.9939 | Val loss: 0.0170 | Val score: 0.9926
+2024-03-27 02:39:18.161 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 012 | Train loss: 0.0185 | Train score: 0.9939 | Val loss: 0.0174 | Val score: 0.9926
+2024-03-27 02:39:18.382 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 013 | Train loss: 0.0078 | Train score: 0.9969 | Val loss: 0.0177 | Val score: 0.9914
+2024-03-27 02:39:18.663 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 014 | Train loss: 0.0068 | Train score: 0.9969 | Val loss: 0.0180 | Val score: 0.9914
+2024-03-27 02:39:18.941 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 015 | Train loss: 0.0042 | Train score: 0.9985 | Val loss: 0.0186 | Val score: 0.9914
+2024-03-27 02:39:19.219 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 016 | Train loss: 0.0116 | Train score: 0.9939 | Val loss: 0.0189 | Val score: 0.9914
+2024-03-27 02:39:19.524 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 017 | Train loss: 0.0016 | Train score: 1.0000 | Val loss: 0.0198 | Val score: 0.9914
+2024-03-27 02:39:19.761 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 018 | Train loss: 0.0215 | Train score: 0.9939 | Val loss: 0.0198 | Val score: 0.9914
+2024-03-27 02:39:20.022 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 019 | Train loss: 0.0145 | Train score: 0.9908 | Val loss: 0.0197 | Val score: 0.9951
+2024-03-27 02:39:20.270 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 020 | Train loss: 0.0076 | Train score: 0.9985 | Val loss: 0.0198 | Val score: 0.9951
+2024-03-27 02:39:20.533 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 021 | Train loss: 0.0054 | Train score: 0.9985 | Val loss: 0.0202 | Val score: 0.9939
+2024-03-27 02:39:20.801 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 022 | Train loss: 0.0038 | Train score: 0.9985 | Val loss: 0.0204 | Val score: 0.9939
+2024-03-27 02:39:21.048 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 023 | Train loss: 0.0021 | Train score: 1.0000 | Val loss: 0.0211 | Val score: 0.9939
+2024-03-27 02:39:21.274 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 024 | Train loss: 0.0079 | Train score: 0.9985 | Val loss: 0.0222 | Val score: 0.9939
+2024-03-27 02:39:21.500 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 025 | Train loss: 0.0134 | Train score: 0.9969 | Val loss: 0.0217 | Val score: 0.9926
+2024-03-27 02:39:21.748 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 026 | Train loss: 0.0144 | Train score: 0.9939 | Val loss: 0.0224 | Val score: 0.9926
+2024-03-27 02:39:21.875 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 027 | Train loss: 0.0068 | Train score: 0.9985 | Val loss: 0.0231 | Val score: 0.9926
+2024-03-27 02:39:21.978 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 028 | Train loss: 0.0022 | Train score: 1.0000 | Val loss: 0.0247 | Val score: 0.9902
+2024-03-27 02:39:22.079 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 029 | Train loss: 0.0146 | Train score: 0.9939 | Val loss: 0.0271 | Val score: 0.9890
+2024-03-27 02:39:22.184 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 030 | Train loss: 0.0051 | Train score: 0.9985 | Val loss: 0.0306 | Val score: 0.9877
+2024-03-27 02:39:22.286 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 031 | Train loss: 0.0020 | Train score: 1.0000 | Val loss: 0.0344 | Val score: 0.9877
+2024-03-27 02:39:22.387 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 032 | Train loss: 0.0026 | Train score: 1.0000 | Val loss: 0.0384 | Val score: 0.9877
+2024-03-27 02:39:22.489 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 033 | Train loss: 0.0075 | Train score: 0.9985 | Val loss: 0.0420 | Val score: 0.9877
+2024-03-27 02:39:22.591 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 034 | Train loss: 0.0015 | Train score: 1.0000 | Val loss: 0.0454 | Val score: 0.9865
+2024-03-27 02:39:22.699 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 035 | Train loss: 0.0048 | Train score: 0.9985 | Val loss: 0.0462 | Val score: 0.9865
+2024-03-27 02:39:22.800 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 036 | Train loss: 0.0014 | Train score: 1.0000 | Val loss: 0.0472 | Val score: 0.9877
+2024-03-27 02:39:23.006 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 037 | Train loss: 0.0011 | Train score: 1.0000 | Val loss: 0.0485 | Val score: 0.9877
+2024-03-27 02:39:23.269 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 038 | Train loss: 0.0020 | Train score: 0.9985 | Val loss: 0.0492 | Val score: 0.9877
+2024-03-27 02:39:23.520 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 039 | Train loss: 0.0061 | Train score: 0.9985 | Val loss: 0.0508 | Val score: 0.9877
+2024-03-27 02:39:23.748 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 040 | Train loss: 0.0052 | Train score: 0.9969 | Val loss: 0.0524 | Val score: 0.9877
+2024-03-27 02:39:23.989 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 041 | Train loss: 0.0016 | Train score: 1.0000 | Val loss: 0.0545 | Val score: 0.9877
+2024-03-27 02:39:24.091 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 042 | Train loss: 0.0015 | Train score: 1.0000 | Val loss: 0.0566 | Val score: 0.9890
+2024-03-27 02:39:24.192 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 043 | Train loss: 0.0023 | Train score: 0.9985 | Val loss: 0.0597 | Val score: 0.9902
+2024-03-27 02:39:24.443 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 044 | Train loss: 0.0008 | Train score: 1.0000 | Val loss: 0.0633 | Val score: 0.9890
+2024-03-27 02:39:24.691 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 045 | Train loss: 0.0051 | Train score: 0.9985 | Val loss: 0.0635 | Val score: 0.9890
+2024-03-27 02:39:24.939 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 046 | Train loss: 0.0002 | Train score: 1.0000 | Val loss: 0.0638 | Val score: 0.9902
+2024-03-27 02:39:25.164 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 047 | Train loss: 0.0015 | Train score: 0.9985 | Val loss: 0.0642 | Val score: 0.9902
+2024-03-27 02:39:25.422 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 048 | Train loss: 0.0001 | Train score: 1.0000 | Val loss: 0.0645 | Val score: 0.9914
+2024-03-27 02:39:25.694 | INFO     | tabularbench.core.trainer_finetune:train:92 - Epoch 049 | Train loss: 0.0002 | Train score: 1.0000 | Val loss: 0.0650 | Val score: 0.9914
+2024-03-27 02:39:25.695 | INFO     | tabularbench.core.trainer_finetune:train:102 - Early stopping
+2024-03-27 02:39:26.962 | INFO     | tabularbench.core.run_experiment:run_experiment_:85 - split_9 :: train: 1.0000, val: 0.9863, test: 0.9941
+2024-03-27 02:39:26.967 | INFO     | tabularbench.core.run_experiment:run_experiment:42 - Finished experiment on Satellite (id=167211) with Foundation doing CLASSIFICATION
+2024-03-27 02:39:26.967 | INFO     | tabularbench.core.run_experiment:run_experiment:43 - Final scores: 
+2024-03-27 02:39:26.969 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_0 :: train: 0.9975, val: 0.9961, test: 0.9863
+2024-03-27 02:39:26.970 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_1 :: train: 0.9971, val: 0.9961, test: 0.9961
+2024-03-27 02:39:26.976 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_2 :: train: 1.0000, val: 0.9941, test: 0.9980
+2024-03-27 02:39:26.977 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_3 :: train: 0.9975, val: 0.9922, test: 0.9941
+2024-03-27 02:39:26.978 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_4 :: train: 1.0000, val: 0.9922, test: 0.9922
+2024-03-27 02:39:26.978 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_5 :: train: 0.9975, val: 0.9941, test: 0.9941
+2024-03-27 02:39:26.979 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_6 :: train: 0.9983, val: 0.9961, test: 0.9941
+2024-03-27 02:39:26.980 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_7 :: train: 0.9975, val: 0.9922, test: 0.9980
+2024-03-27 02:39:26.980 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_8 :: train: 0.9975, val: 0.9941, test: 0.9922
+2024-03-27 02:39:26.981 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_9 :: train: 1.0000, val: 0.9863, test: 0.9941
+2024-03-27 02:39:26.983 | INFO     | tabularbench.core.run_experiment:run_experiment:53 - cv_average :: train: 0.9983, val: 0.9933, test: 0.9939

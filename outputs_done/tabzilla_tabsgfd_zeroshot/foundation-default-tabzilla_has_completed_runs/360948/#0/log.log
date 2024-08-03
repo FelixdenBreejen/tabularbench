@@ -1,0 +1,78 @@
+2024-03-21 08:28:44.599 | INFO     | tabularbench.core.run_experiment:run_experiment:24 - Start experiment on libras (id=360948) with Foundation doing classification
+2024-03-21 08:28:44.600 | INFO     | tabularbench.core.run_experiment:run_experiment:27 - Set seed to 0
+2024-03-21 08:28:44.601 | INFO     | tabularbench.core.run_experiment:run_experiment:29 - We are using the following hyperparameters:
+2024-03-21 08:28:44.601 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_features: 100
+2024-03-21 08:28:44.601 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_classes: 10
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     dim: 512
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_layers: 12
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_heads: 4
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     attn_dropout: 0.0
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     y_as_float_embedding: True
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     linear_attention: False
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_samples_support: 8192
+2024-03-21 08:28:44.602 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_samples_query: 1024
+2024-03-21 08:28:44.603 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     max_epochs: 0
+2024-03-21 08:28:44.603 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     optimizer: adamw
+2024-03-21 08:28:44.603 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr: 1e-05
+2024-03-21 08:28:44.603 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     weight_decay: 0
+2024-03-21 08:28:44.603 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr_scheduler: False
+2024-03-21 08:28:44.603 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     lr_scheduler_patience: 30
+2024-03-21 08:28:44.605 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     early_stopping_patience: 40
+2024-03-21 08:28:44.606 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_pretrained_weights: True
+2024-03-21 08:28:44.606 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     path_to_weights: outputs_done/foundation_forest_big_300k/weights/model_step_300000.pt
+2024-03-21 08:28:44.606 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     n_ensembles: 1
+2024-03-21 08:28:44.606 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_quantile_transformer: True
+2024-03-21 08:28:44.606 | INFO     | tabularbench.core.run_experiment:run_experiment:31 -     use_feature_count_scaling: True
+2024-03-21 08:28:44.753 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 1/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:28:46.142 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:28:47.853 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.7484 | Val score: 0.3793
+2024-03-21 08:28:50.034 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_0 :: train: 0.6146, val: 0.4444, test: 0.4722
+2024-03-21 08:28:50.141 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 2/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:28:50.538 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:28:51.773 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.6908 | Val score: 0.3621
+2024-03-21 08:28:54.177 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_1 :: train: 0.6181, val: 0.4722, test: 0.4444
+2024-03-21 08:28:54.285 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 3/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:28:54.658 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:28:55.965 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.5898 | Val score: 0.4310
+2024-03-21 08:28:57.728 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_2 :: train: 0.6250, val: 0.4444, test: 0.4167
+2024-03-21 08:28:57.834 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 4/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:28:58.164 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:28:59.366 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.8079 | Val score: 0.3276
+2024-03-21 08:29:01.509 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_3 :: train: 0.6181, val: 0.3611, test: 0.3889
+2024-03-21 08:29:01.617 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 5/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:29:01.945 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:29:02.945 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.7375 | Val score: 0.3103
+2024-03-21 08:29:05.089 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_4 :: train: 0.6076, val: 0.5833, test: 0.4444
+2024-03-21 08:29:05.194 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 6/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:29:05.520 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:29:06.842 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.5423 | Val score: 0.5345
+2024-03-21 08:29:08.686 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_5 :: train: 0.6562, val: 0.3889, test: 0.5000
+2024-03-21 08:29:08.795 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 7/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:29:09.141 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:29:10.163 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.5546 | Val score: 0.4310
+2024-03-21 08:29:12.215 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_6 :: train: 0.6076, val: 0.3889, test: 0.4167
+2024-03-21 08:29:12.328 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 8/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:29:12.673 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:29:14.332 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.5732 | Val score: 0.4138
+2024-03-21 08:29:16.556 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_7 :: train: 0.6701, val: 0.3889, test: 0.4167
+2024-03-21 08:29:16.664 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 9/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:29:17.039 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:29:18.507 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.6754 | Val score: 0.4138
+2024-03-21 08:29:19.863 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_8 :: train: 0.6215, val: 0.5000, test: 0.4167
+2024-03-21 08:29:19.978 | INFO     | tabularbench.core.run_experiment:run_experiment_:73 - Start split 10/10 of libras (id=360948) with FOUNDATION doing CLASSIFICATION
+2024-03-21 08:29:20.331 | INFO     | tabularbench.data.preprocessor:determine_which_features_to_select:86 - A maximum of 100 features are allowed, but the dataset has 104 features. A subset of 100 are selected using SelectKBest
+2024-03-21 08:29:21.435 | INFO     | tabularbench.core.trainer_finetune:train:81 - Epoch 000 | Train loss: -.---- | Train score: -.---- | Val loss: 1.6717 | Val score: 0.3793
+2024-03-21 08:29:22.800 | INFO     | tabularbench.core.run_experiment:run_experiment_:90 - split_9 :: train: 0.6528, val: 0.4167, test: 0.4722
+2024-03-21 08:29:22.802 | INFO     | tabularbench.core.run_experiment:run_experiment:42 - Finished experiment on libras (id=360948) with Foundation doing CLASSIFICATION
+2024-03-21 08:29:22.803 | INFO     | tabularbench.core.run_experiment:run_experiment:43 - Final scores: 
+2024-03-21 08:29:22.805 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_0 :: train: 0.6146, val: 0.4444, test: 0.4722
+2024-03-21 08:29:22.805 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_1 :: train: 0.6181, val: 0.4722, test: 0.4444
+2024-03-21 08:29:22.806 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_2 :: train: 0.6250, val: 0.4444, test: 0.4167
+2024-03-21 08:29:22.807 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_3 :: train: 0.6181, val: 0.3611, test: 0.3889
+2024-03-21 08:29:22.807 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_4 :: train: 0.6076, val: 0.5833, test: 0.4444
+2024-03-21 08:29:22.808 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_5 :: train: 0.6562, val: 0.3889, test: 0.5000
+2024-03-21 08:29:22.809 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_6 :: train: 0.6076, val: 0.3889, test: 0.4167
+2024-03-21 08:29:22.810 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_7 :: train: 0.6701, val: 0.3889, test: 0.4167
+2024-03-21 08:29:22.810 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_8 :: train: 0.6215, val: 0.5000, test: 0.4167
+2024-03-21 08:29:22.811 | INFO     | tabularbench.core.run_experiment:run_experiment:46 - cv_split_9 :: train: 0.6528, val: 0.4167, test: 0.4722
+2024-03-21 08:29:22.813 | INFO     | tabularbench.core.run_experiment:run_experiment:53 - cv_average :: train: 0.6292, val: 0.4389, test: 0.4389

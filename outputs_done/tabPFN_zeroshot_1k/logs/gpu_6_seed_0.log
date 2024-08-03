@@ -1,0 +1,637 @@
+2023-09-19 19:34:14,252 :: INFO     :: run_sweeps      ::   Run sweeps started: device cuda:6, seed 0
+2023-09-19 19:34:14,253 :: INFO     :: _perform_api... ::   Starting [get] request for the URL https://www.openml.org/api/v1/xml/study/334
+2023-09-19 19:34:15,084 :: INFO     :: _perform_api... ::   0.8307333s taken for [get] request for the URL https://www.openml.org/api/v1/xml/study/334
+2023-09-19 19:34:15,093 :: INFO     :: _perform_api... ::   Starting [get] request for the URL https://www.openml.org/api/v1/xml/study/337
+2023-09-19 19:34:15,926 :: INFO     :: _perform_api... ::   0.8329673s taken for [get] request for the URL https://www.openml.org/api/v1/xml/study/337
+2023-09-19 19:34:15,940 :: INFO     :: _perform_api... ::   Starting [get] request for the URL https://www.openml.org/api/v1/xml/study/335
+2023-09-19 19:34:17,167 :: INFO     :: _perform_api... ::   1.2268851s taken for [get] request for the URL https://www.openml.org/api/v1/xml/study/335
+2023-09-19 19:34:17,181 :: INFO     :: _perform_api... ::   Starting [get] request for the URL https://www.openml.org/api/v1/xml/study/336
+2023-09-19 19:34:18,017 :: INFO     :: _perform_api... ::   0.8358583s taken for [get] request for the URL https://www.openml.org/api/v1/xml/study/336
+2023-09-19 19:34:18,031 :: INFO     :: run_sweeps      ::   Found 4 sweeps to execute
+2023-09-19 19:34:18,031 :: INFO     :: run_sweeps      ::   Sweep config: benchmark categorical_classification, model TABPFN_FINETUNE, search type DEFAULT
+2023-09-19 19:34:18,031 :: INFO     :: search_sweep    ::   Start DEFAULT search for TABPFN_FINETUNE on categorical_classification
+2023-09-19 19:34:18,035 :: INFO     :: run_experiment  ::   Start experiment on electricity (id=44156) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:18,035 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:34:18,035 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:34:18,036 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:34:18,157 :: INFO     :: _cache_compr... ::   pickle write electricity
+2023-09-19 19:34:18,557 :: INFO     :: run_experiment_ ::   Start split 1/1 of electricity (id=44156) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:26,301 :: INFO     :: run_experiment  ::   Finished experiment on electricity (id=44156) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:26,301 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:34:26,301 :: INFO     :: run_experiment  ::   split_0 :: train: 0.8049, val: 0.8023, test: 0.7954
+2023-09-19 19:34:26,321 :: INFO     :: run_experiment  ::   Start experiment on road-safety (id=45038) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:26,321 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:34:26,321 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:34:26,322 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:34:26,358 :: INFO     :: _cache_compr... ::   pickle write road-safety
+2023-09-19 19:34:27,257 :: INFO     :: run_experiment_ ::   Start split 1/1 of road-safety (id=45038) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:43,665 :: INFO     :: run_experiment  ::   Finished experiment on road-safety (id=45038) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:43,665 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:34:43,665 :: INFO     :: run_experiment  ::   split_0 :: train: 0.7714, val: 0.7362, test: 0.7353
+2023-09-19 19:34:43,685 :: INFO     :: run_experiment  ::   Start experiment on compas-two-years (id=45039) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:43,685 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:34:43,686 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:34:43,696 :: INFO     :: _cache_compr... ::   pickle write compas-two-years
+2023-09-19 19:34:44,074 :: INFO     :: run_experiment_ ::   Start split 1/3 of compas-two-years (id=45039) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:45,833 :: INFO     :: run_experiment_ ::   Start split 2/3 of compas-two-years (id=45039) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:47,560 :: INFO     :: run_experiment_ ::   Start split 3/3 of compas-two-years (id=45039) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:49,184 :: INFO     :: run_experiment  ::   Finished experiment on compas-two-years (id=45039) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:49,184 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:34:49,184 :: INFO     :: run_experiment  ::   split_0 :: train: 0.6861, val: 0.6689, test: 0.6606
+2023-09-19 19:34:49,184 :: INFO     :: run_experiment  ::   split_1 :: train: 0.6671, val: 0.6779, test: 0.6683
+2023-09-19 19:34:49,184 :: INFO     :: run_experiment  ::   split_2 :: train: 0.6706, val: 0.6913, test: 0.6913
+2023-09-19 19:34:49,203 :: INFO     :: run_experiment  ::   Start experiment on default-of-credit-card-clients (id=45036) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:49,203 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:34:49,203 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:34:49,203 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:34:49,203 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:34:49,204 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:34:49,213 :: INFO     :: _cache_compr... ::   pickle write default-of-credit-card-clients
+2023-09-19 19:34:49,627 :: INFO     :: run_experiment_ ::   Start split 1/3 of default-of-credit-card-clients (id=45036) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:52,853 :: INFO     :: run_experiment_ ::   Start split 2/3 of default-of-credit-card-clients (id=45036) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:56,244 :: INFO     :: run_experiment_ ::   Start split 3/3 of default-of-credit-card-clients (id=45036) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:59,376 :: INFO     :: run_experiment  ::   Finished experiment on default-of-credit-card-clients (id=45036) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:59,376 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:34:59,376 :: INFO     :: run_experiment  ::   split_0 :: train: 0.7353, val: 0.6910, test: 0.7009
+2023-09-19 19:34:59,376 :: INFO     :: run_experiment  ::   split_1 :: train: 0.7311, val: 0.6893, test: 0.7095
+2023-09-19 19:34:59,376 :: INFO     :: run_experiment  ::   split_2 :: train: 0.7295, val: 0.7052, test: 0.7077
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::   Start experiment on albert (id=45035) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:34:59,394 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:34:59,414 :: INFO     :: _cache_compr... ::   pickle write albert
+2023-09-19 19:35:00,094 :: INFO     :: run_experiment_ ::   Start split 1/1 of albert (id=45035) with TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:35:11,080 :: INFO     :: run_experiment  ::   Finished experiment on albert (id=45035) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with MIXED features
+2023-09-19 19:35:11,080 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:35:11,080 :: INFO     :: run_experiment  ::   split_0 :: train: 0.6574, val: 0.6504, test: 0.6432
+2023-09-19 19:35:11,087 :: INFO     :: search_sweep    ::   Run finished by another process for TABPFN_FINETUNE on categorical_classification with dataset 45035
+2023-09-19 19:35:11,087 :: INFO     :: search_sweep    ::   Results are not being saved.
+2023-09-19 19:35:11,091 :: INFO     :: search_sweep    ::   Finished DEFAULT search for TABPFN_FINETUNE on categorical_classification
+2023-09-19 19:35:11,091 :: INFO     :: run_sweeps      ::   Sweep config: benchmark numerical_classification, model TABPFN_FINETUNE, search type DEFAULT
+2023-09-19 19:35:11,091 :: INFO     :: search_sweep    ::   Start DEFAULT search for TABPFN_FINETUNE on numerical_classification
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::   Start experiment on heloc (id=45026) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:35:11,096 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:35:11,105 :: INFO     :: _cache_compr... ::   pickle write heloc
+2023-09-19 19:35:11,493 :: INFO     :: run_experiment_ ::   Start split 1/3 of heloc (id=45026) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:14,016 :: INFO     :: run_experiment_ ::   Start split 2/3 of heloc (id=45026) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:16,502 :: INFO     :: run_experiment_ ::   Start split 3/3 of heloc (id=45026) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:18,881 :: INFO     :: run_experiment  ::   Finished experiment on heloc (id=45026) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:18,881 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:35:18,881 :: INFO     :: run_experiment  ::   split_0 :: train: 0.7223, val: 0.7389, test: 0.7310
+2023-09-19 19:35:18,882 :: INFO     :: run_experiment  ::   split_1 :: train: 0.7266, val: 0.7289, test: 0.7000
+2023-09-19 19:35:18,882 :: INFO     :: run_experiment  ::   split_2 :: train: 0.7300, val: 0.7100, test: 0.7214
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::   Start experiment on Higgs (id=44129) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:35:18,902 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:35:18,903 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:35:18,903 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:35:18,903 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:35:18,903 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:35:18,903 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:35:18,903 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:35:19,042 :: INFO     :: _cache_compr... ::   pickle write Higgs
+2023-09-19 19:35:20,762 :: INFO     :: run_experiment_ ::   Start split 1/1 of Higgs (id=44129) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:41,177 :: INFO     :: run_experiment  ::   Finished experiment on Higgs (id=44129) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:41,177 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:35:41,177 :: INFO     :: run_experiment  ::   split_0 :: train: 0.7409, val: 0.6769, test: 0.6763
+2023-09-19 19:35:41,197 :: INFO     :: run_experiment  ::   Start experiment on jannis (id=45021) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:35:41,198 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:35:41,263 :: INFO     :: _cache_compr... ::   pickle write jannis
+2023-09-19 19:35:42,497 :: INFO     :: run_experiment_ ::   Start split 1/1 of jannis (id=45021) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:53,448 :: INFO     :: run_experiment  ::   Finished experiment on jannis (id=45021) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:53,448 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:35:53,448 :: INFO     :: run_experiment  ::   split_0 :: train: 0.7701, val: 0.7367, test: 0.7433
+2023-09-19 19:35:53,464 :: INFO     :: run_experiment  ::   Start experiment on california (id=45028) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:35:53,465 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:35:53,471 :: INFO     :: _cache_compr... ::   pickle write california
+2023-09-19 19:35:53,814 :: INFO     :: run_experiment_ ::   Start split 1/1 of california (id=45028) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:58,141 :: INFO     :: run_experiment  ::   Finished experiment on california (id=45028) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:58,141 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:35:58,141 :: INFO     :: run_experiment  ::   split_0 :: train: 0.8754, val: 0.8567, test: 0.8540
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::   Start experiment on eye_movements (id=44130) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:35:58,159 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:35:58,160 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:35:58,160 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:35:58,160 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:35:58,160 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:35:58,160 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:35:58,160 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:35:58,167 :: INFO     :: _cache_compr... ::   pickle write eye_movements
+2023-09-19 19:35:58,531 :: INFO     :: run_experiment_ ::   Start split 1/3 of eye_movements (id=44130) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:00,610 :: INFO     :: run_experiment_ ::   Start split 2/3 of eye_movements (id=44130) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:02,755 :: INFO     :: run_experiment_ ::   Start split 3/3 of eye_movements (id=44130) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:04,859 :: INFO     :: run_experiment  ::   Finished experiment on eye_movements (id=44130) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:04,859 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:36:04,859 :: INFO     :: run_experiment  ::   split_0 :: train: 0.6195, val: 0.5863, test: 0.5772
+2023-09-19 19:36:04,859 :: INFO     :: run_experiment  ::   split_1 :: train: 0.6212, val: 0.5614, test: 0.5860
+2023-09-19 19:36:04,860 :: INFO     :: run_experiment  ::   split_2 :: train: 0.6409, val: 0.5585, test: 0.5422
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::   Start experiment on default-of-credit-card-clients (id=45020) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:36:04,881 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:36:04,882 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:36:04,882 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:36:04,890 :: INFO     :: _cache_compr... ::   pickle write default-of-credit-card-clients
+2023-09-19 19:36:05,294 :: INFO     :: run_experiment_ ::   Start split 1/3 of default-of-credit-card-clients (id=45020) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:08,560 :: INFO     :: run_experiment_ ::   Start split 2/3 of default-of-credit-card-clients (id=45020) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:11,852 :: INFO     :: run_experiment_ ::   Start split 3/3 of default-of-credit-card-clients (id=45020) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:15,067 :: INFO     :: run_experiment  ::   Finished experiment on default-of-credit-card-clients (id=45020) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:15,068 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:36:15,068 :: INFO     :: run_experiment  ::   split_0 :: train: 0.7340, val: 0.6876, test: 0.7009
+2023-09-19 19:36:15,068 :: INFO     :: run_experiment  ::   split_1 :: train: 0.7306, val: 0.6901, test: 0.7156
+2023-09-19 19:36:15,068 :: INFO     :: run_experiment  ::   split_2 :: train: 0.7269, val: 0.6977, test: 0.7091
+2023-09-19 19:36:15,086 :: INFO     :: run_experiment  ::   Start experiment on covertype (id=44121) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:15,086 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:36:15,086 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:36:15,086 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:36:15,086 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:36:15,087 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:36:15,134 :: INFO     :: _cache_compr... ::   pickle write covertype
+2023-09-19 19:36:15,932 :: INFO     :: run_experiment_ ::   Start split 1/1 of covertype (id=44121) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:36,446 :: INFO     :: run_experiment  ::   Finished experiment on covertype (id=44121) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:36,446 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:36:36,446 :: INFO     :: run_experiment  ::   split_0 :: train: 0.7752, val: 0.7650, test: 0.7664
+2023-09-19 19:36:36,453 :: INFO     :: search_sweep    ::   Run finished by another process for TABPFN_FINETUNE on numerical_classification with dataset 44121
+2023-09-19 19:36:36,453 :: INFO     :: search_sweep    ::   Results are not being saved.
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::   Start experiment on Diabetes130US (id=45022) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:36:36,459 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:36:36,468 :: INFO     :: _cache_compr... ::   pickle write Diabetes130US
+2023-09-19 19:36:36,867 :: INFO     :: run_experiment_ ::   Start split 1/1 of Diabetes130US (id=45022) with TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:50,687 :: INFO     :: run_experiment  ::   Finished experiment on Diabetes130US (id=45022) with ModelName.TABPFN_FINETUNE doing CLASSIFICATION with NUMERICAL features
+2023-09-19 19:36:50,687 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:36:50,687 :: INFO     :: run_experiment  ::   split_0 :: train: 0.6142, val: 0.6076, test: 0.6046
+2023-09-19 19:36:50,693 :: INFO     :: search_sweep    ::   Run finished by another process for TABPFN_FINETUNE on numerical_classification with dataset 45022
+2023-09-19 19:36:50,693 :: INFO     :: search_sweep    ::   Results are not being saved.
+2023-09-19 19:36:50,698 :: INFO     :: search_sweep    ::   Finished DEFAULT search for TABPFN_FINETUNE on numerical_classification
+2023-09-19 19:36:50,698 :: INFO     :: run_sweeps      ::   Sweep config: benchmark categorical_regression, model TABPFN_FINETUNE, search type DEFAULT
+2023-09-19 19:36:50,698 :: INFO     :: search_sweep    ::   Start DEFAULT search for TABPFN_FINETUNE on categorical_regression
+2023-09-19 19:36:50,699 :: INFO     :: run_experiment  ::   Start experiment on analcatdata_supreme (id=44055) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:50,699 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:36:50,699 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:36:50,700 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:36:50,707 :: INFO     :: _cache_compr... ::   pickle write analcatdata_supreme
+2023-09-19 19:36:51,009 :: INFO     :: run_experiment_ ::   Start split 1/5 of analcatdata_supreme (id=44055) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:52,368 :: INFO     :: run_experiment_ ::   Start split 2/5 of analcatdata_supreme (id=44055) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:53,699 :: INFO     :: run_experiment_ ::   Start split 3/5 of analcatdata_supreme (id=44055) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:55,071 :: INFO     :: run_experiment_ ::   Start split 4/5 of analcatdata_supreme (id=44055) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:56,472 :: INFO     :: run_experiment_ ::   Start split 5/5 of analcatdata_supreme (id=44055) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:57,799 :: INFO     :: run_experiment  ::   Finished experiment on analcatdata_supreme (id=44055) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:57,799 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:36:57,799 :: INFO     :: run_experiment  ::   split_0 :: train: -0.2260, val: -0.2159, test: -0.2747
+2023-09-19 19:36:57,799 :: INFO     :: run_experiment  ::   split_1 :: train: -0.2382, val: -0.2220, test: -0.2296
+2023-09-19 19:36:57,799 :: INFO     :: run_experiment  ::   split_2 :: train: -0.2300, val: -0.3059, test: -0.2232
+2023-09-19 19:36:57,799 :: INFO     :: run_experiment  ::   split_3 :: train: -0.2331, val: -0.2793, test: -0.2234
+2023-09-19 19:36:57,799 :: INFO     :: run_experiment  ::   split_4 :: train: -0.2363, val: -0.2292, test: -0.2356
+2023-09-19 19:36:57,813 :: INFO     :: run_experiment  ::   Start experiment on SGEMM_GPU_kernel_performance (id=44069) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:36:57,814 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:36:57,841 :: INFO     :: _cache_compr... ::   pickle write SGEMM_GPU_kernel_performance
+2023-09-19 19:36:58,413 :: INFO     :: run_experiment_ ::   Start split 1/1 of SGEMM_GPU_kernel_performance (id=44069) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:19,291 :: INFO     :: run_experiment  ::   Finished experiment on SGEMM_GPU_kernel_performance (id=44069) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:19,291 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:37:19,291 :: INFO     :: run_experiment  ::   split_0 :: train: -10.4282, val: -10.1376, test: -10.3730
+2023-09-19 19:37:19,309 :: INFO     :: run_experiment  ::   Start experiment on seattlecrime6 (id=45043) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:37:19,310 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:37:19,317 :: INFO     :: _cache_compr... ::   pickle write seattlecrime6
+2023-09-19 19:37:19,653 :: INFO     :: run_experiment_ ::   Start split 1/1 of seattlecrime6 (id=45043) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:29,991 :: INFO     :: run_experiment  ::   Finished experiment on seattlecrime6 (id=45043) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:29,991 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:37:29,991 :: INFO     :: run_experiment  ::   split_0 :: train: -2.3477, val: -2.3611, test: -2.3339
+2023-09-19 19:37:30,006 :: INFO     :: run_experiment  ::   Start experiment on medical_charges (id=45048) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:30,006 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:37:30,007 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:37:30,030 :: INFO     :: _cache_compr... ::   pickle write medical_charges
+2023-09-19 19:37:30,399 :: INFO     :: run_experiment_ ::   Start split 1/1 of medical_charges (id=45048) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:50,747 :: INFO     :: run_experiment  ::   Finished experiment on medical_charges (id=45048) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:50,747 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:37:50,747 :: INFO     :: run_experiment  ::   split_0 :: train: -26.2851, val: -25.6381, test: -25.5477
+2023-09-19 19:37:50,765 :: INFO     :: run_experiment  ::   Start experiment on delays_zurich_transport (id=45045) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:37:50,765 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:37:50,765 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:37:50,765 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:37:50,766 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:37:50,985 :: INFO     :: _cache_compr... ::   pickle write delays_zurich_transport
+2023-09-19 19:37:57,398 :: INFO     :: run_experiment_ ::   Start split 1/1 of delays_zurich_transport (id=45045) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:38:18,102 :: INFO     :: run_experiment  ::   Finished experiment on delays_zurich_transport (id=45045) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:38:18,102 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:38:18,102 :: INFO     :: run_experiment  ::   split_0 :: train: -3.3023, val: -3.2908, test: -3.2657
+2023-09-19 19:38:18,120 :: INFO     :: run_experiment  ::   Start experiment on Airlines_DepDelay_1M (id=45047) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:38:18,121 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:38:18,169 :: INFO     :: _cache_compr... ::   pickle write Airlines_DepDelay_1M
+2023-09-19 19:38:18,679 :: INFO     :: run_experiment_ ::   Start split 1/1 of Airlines_DepDelay_1M (id=45047) with TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:38:39,499 :: INFO     :: run_experiment  ::   Finished experiment on Airlines_DepDelay_1M (id=45047) with ModelName.TABPFN_FINETUNE doing REGRESSION with MIXED features
+2023-09-19 19:38:39,500 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:38:39,500 :: INFO     :: run_experiment  ::   split_0 :: train: -11.5207, val: -11.4378, test: -11.3078
+2023-09-19 19:38:39,517 :: INFO     :: search_sweep    ::   Finished DEFAULT search for TABPFN_FINETUNE on categorical_regression
+2023-09-19 19:38:39,517 :: INFO     :: run_sweeps      ::   Sweep config: benchmark numerical_regression, model TABPFN_FINETUNE, search type DEFAULT
+2023-09-19 19:38:39,517 :: INFO     :: search_sweep    ::   Start DEFAULT search for TABPFN_FINETUNE on numerical_regression
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::   Start experiment on cpu_act (id=44132) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:38:39,519 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:38:39,529 :: INFO     :: _cache_compr... ::   pickle write cpu_act
+2023-09-19 19:38:39,936 :: INFO     :: run_experiment_ ::   Start split 1/3 of cpu_act (id=44132) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:38:42,116 :: INFO     :: run_experiment_ ::   Start split 2/3 of cpu_act (id=44132) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:38:44,370 :: INFO     :: run_experiment_ ::   Start split 3/3 of cpu_act (id=44132) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:38:46,457 :: INFO     :: run_experiment  ::   Finished experiment on cpu_act (id=44132) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:38:46,457 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:38:46,457 :: INFO     :: run_experiment  ::   split_0 :: train: -0.6739, val: -0.6951, test: -0.6304
+2023-09-19 19:38:46,457 :: INFO     :: run_experiment  ::   split_1 :: train: -0.6884, val: -0.5945, test: -0.6421
+2023-09-19 19:38:46,457 :: INFO     :: run_experiment  ::   split_2 :: train: -0.6766, val: -0.6323, test: -0.6555
+2023-09-19 19:38:46,467 :: INFO     :: run_experiment  ::   Start experiment on medical_charges (id=44146) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:38:46,467 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:38:46,467 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:38:46,467 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:38:46,467 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:38:46,467 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:38:46,467 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:38:46,468 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:38:46,468 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:38:46,468 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:38:46,468 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:38:46,468 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:38:46,468 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:38:46,468 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:38:46,487 :: INFO     :: _cache_compr... ::   pickle write medical_charges
+2023-09-19 19:38:46,886 :: INFO     :: run_experiment_ ::   Start split 1/1 of medical_charges (id=44146) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:07,161 :: INFO     :: run_experiment  ::   Finished experiment on medical_charges (id=44146) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:07,162 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:39:07,162 :: INFO     :: run_experiment  ::   split_0 :: train: -26.2851, val: -25.6381, test: -25.5477
+2023-09-19 19:39:07,179 :: INFO     :: run_experiment  ::   Start experiment on delays_zurich_transport (id=45034) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:39:07,180 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:39:07,347 :: INFO     :: _cache_compr... ::   pickle write delays_zurich_transport
+2023-09-19 19:39:09,104 :: INFO     :: run_experiment_ ::   Start split 1/1 of delays_zurich_transport (id=45034) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:30,579 :: INFO     :: run_experiment  ::   Finished experiment on delays_zurich_transport (id=45034) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:30,579 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:39:30,579 :: INFO     :: run_experiment  ::   split_0 :: train: -3.2740, val: -3.2564, test: -3.2332
+2023-09-19 19:39:30,604 :: INFO     :: run_experiment  ::   Start experiment on sulfur (id=44145) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:30,604 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:39:30,604 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:39:30,605 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:39:30,606 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:39:30,614 :: INFO     :: _cache_compr... ::   pickle write sulfur
+2023-09-19 19:39:30,913 :: INFO     :: run_experiment_ ::   Start split 1/3 of sulfur (id=44145) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:33,557 :: INFO     :: run_experiment_ ::   Start split 2/3 of sulfur (id=44145) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:36,210 :: INFO     :: run_experiment_ ::   Start split 3/3 of sulfur (id=44145) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:38,819 :: INFO     :: run_experiment  ::   Finished experiment on sulfur (id=44145) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:38,819 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:39:38,819 :: INFO     :: run_experiment  ::   split_0 :: train: -223.0728, val: -147.5678, test: -192.9260
+2023-09-19 19:39:38,819 :: INFO     :: run_experiment  ::   split_1 :: train: -216.5216, val: -144.2559, test: -223.4796
+2023-09-19 19:39:38,819 :: INFO     :: run_experiment  ::   split_2 :: train: -255.8552, val: -269.8140, test: -207.3280
+2023-09-19 19:39:38,837 :: INFO     :: run_experiment  ::   Start experiment on superconduct (id=44148) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:39:38,838 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:39:38,873 :: INFO     :: _cache_compr... ::   pickle write superconduct
+2023-09-19 19:39:39,697 :: INFO     :: run_experiment_ ::   Start split 1/1 of superconduct (id=44148) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:44,183 :: INFO     :: run_experiment  ::   Finished experiment on superconduct (id=44148) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:44,184 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:39:44,184 :: INFO     :: run_experiment  ::   split_0 :: train: -17.8226, val: -18.0672, test: -17.8231
+2023-09-19 19:39:44,201 :: INFO     :: run_experiment  ::   Start experiment on abalone (id=45033) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:44,201 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:39:44,201 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:39:44,202 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:39:44,209 :: INFO     :: _cache_compr... ::   pickle write abalone
+2023-09-19 19:39:44,586 :: INFO     :: run_experiment_ ::   Start split 1/5 of abalone (id=45033) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:46,009 :: INFO     :: run_experiment_ ::   Start split 2/5 of abalone (id=45033) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:47,473 :: INFO     :: run_experiment_ ::   Start split 3/5 of abalone (id=45033) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:48,892 :: INFO     :: run_experiment_ ::   Start split 4/5 of abalone (id=45033) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:50,297 :: INFO     :: run_experiment_ ::   Start split 5/5 of abalone (id=45033) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:51,605 :: INFO     :: run_experiment  ::   Finished experiment on abalone (id=45033) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:51,605 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:39:51,605 :: INFO     :: run_experiment  ::   split_0 :: train: -25.4382, val: -21.9779, test: -29.3381
+2023-09-19 19:39:51,605 :: INFO     :: run_experiment  ::   split_1 :: train: -32.4477, val: -40.0323, test: -31.3398
+2023-09-19 19:39:51,605 :: INFO     :: run_experiment  ::   split_2 :: train: -27.7541, val: -24.0413, test: -24.0143
+2023-09-19 19:39:51,605 :: INFO     :: run_experiment  ::   split_3 :: train: -32.3753, val: -34.1365, test: -31.6904
+2023-09-19 19:39:51,605 :: INFO     :: run_experiment  ::   split_4 :: train: -32.3760, val: -40.4591, test: -31.5194
+2023-09-19 19:39:51,622 :: INFO     :: run_experiment  ::   Start experiment on house_sales (id=44144) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:39:51,623 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:39:51,633 :: INFO     :: _cache_compr... ::   pickle write house_sales
+2023-09-19 19:39:52,012 :: INFO     :: run_experiment_ ::   Start split 1/1 of house_sales (id=44144) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:56,616 :: INFO     :: run_experiment  ::   Finished experiment on house_sales (id=44144) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:56,616 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:39:56,616 :: INFO     :: run_experiment  ::   split_0 :: train: -20.2950, val: -20.2663, test: -20.5069
+2023-09-19 19:39:56,631 :: INFO     :: run_experiment  ::   Start experiment on MiamiHousing2016 (id=44147) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:39:56,631 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:39:56,632 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:39:56,640 :: INFO     :: _cache_compr... ::   pickle write MiamiHousing2016
+2023-09-19 19:39:56,981 :: INFO     :: run_experiment_ ::   Start split 1/3 of MiamiHousing2016 (id=44147) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:00,272 :: INFO     :: run_experiment_ ::   Start split 2/3 of MiamiHousing2016 (id=44147) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:03,508 :: INFO     :: run_experiment_ ::   Start split 3/3 of MiamiHousing2016 (id=44147) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:06,691 :: INFO     :: run_experiment  ::   Finished experiment on MiamiHousing2016 (id=44147) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:06,691 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:40:06,691 :: INFO     :: run_experiment  ::   split_0 :: train: -13.4386, val: -13.5731, test: -13.2564
+2023-09-19 19:40:06,691 :: INFO     :: run_experiment  ::   split_1 :: train: -13.3309, val: -14.6248, test: -13.4027
+2023-09-19 19:40:06,691 :: INFO     :: run_experiment  ::   split_2 :: train: -13.4023, val: -13.6583, test: -13.5808
+2023-09-19 19:40:06,706 :: INFO     :: run_experiment  ::   Start experiment on wine_quality (id=44136) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:06,706 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:40:06,706 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:40:06,707 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:40:06,712 :: INFO     :: _cache_compr... ::   pickle write wine_quality
+2023-09-19 19:40:06,990 :: INFO     :: run_experiment_ ::   Start split 1/3 of wine_quality (id=44136) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:08,880 :: INFO     :: run_experiment_ ::   Start split 2/3 of wine_quality (id=44136) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:10,766 :: INFO     :: run_experiment_ ::   Start split 3/3 of wine_quality (id=44136) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:12,567 :: INFO     :: run_experiment  ::   Finished experiment on wine_quality (id=44136) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:12,567 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:40:12,567 :: INFO     :: run_experiment  ::   split_0 :: train: -12.1597, val: -10.6369, test: -11.8709
+2023-09-19 19:40:12,567 :: INFO     :: run_experiment  ::   split_1 :: train: -11.6308, val: -12.6826, test: -12.7326
+2023-09-19 19:40:12,567 :: INFO     :: run_experiment  ::   split_2 :: train: -12.0199, val: -11.6113, test: -11.7484
+2023-09-19 19:40:12,571 :: INFO     :: search_sweep    ::   Run finished by another process for TABPFN_FINETUNE on numerical_regression with dataset 44136
+2023-09-19 19:40:12,572 :: INFO     :: search_sweep    ::   Results are not being saved.
+2023-09-19 19:40:12,576 :: INFO     :: run_experiment  ::   Start experiment on yprop_4_1 (id=45032) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:12,576 :: INFO     :: run_experiment  ::   Set seed to 0
+2023-09-19 19:40:12,576 :: INFO     :: run_experiment  ::   We are using the following hyperparameters:
+2023-09-19 19:40:12,576 :: INFO     :: run_experiment  ::       batch_size: 1000
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       max_epochs: 0
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       optimizer: adamw
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       lr: 1e-05
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       weight_decay: 0
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       lr_scheduler: True
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       lr_scheduler_patience: 30
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       early_stopping_patience: 40
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       use_pretrained_weights: True
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       path_to_weights: tabularbench/models/tabPFN/prior_diff_real_checkpoint_n_0_epoch_42.cpkt
+2023-09-19 19:40:12,577 :: INFO     :: run_experiment  ::       n_ensembles: 10
+2023-09-19 19:40:12,587 :: INFO     :: _cache_compr... ::   pickle write yprop_4_1
+2023-09-19 19:40:12,998 :: INFO     :: run_experiment_ ::   Start split 1/3 of yprop_4_1 (id=45032) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:15,369 :: INFO     :: run_experiment_ ::   Start split 2/3 of yprop_4_1 (id=45032) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:17,832 :: INFO     :: run_experiment_ ::   Start split 3/3 of yprop_4_1 (id=45032) with TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:20,072 :: INFO     :: run_experiment  ::   Finished experiment on yprop_4_1 (id=45032) with ModelName.TABPFN_FINETUNE doing REGRESSION with NUMERICAL features
+2023-09-19 19:40:20,072 :: INFO     :: run_experiment  ::   Final scores: 
+2023-09-19 19:40:20,072 :: INFO     :: run_experiment  ::   split_0 :: train: -6.9559, val: -7.6093, test: -8.7959
+2023-09-19 19:40:20,072 :: INFO     :: run_experiment  ::   split_1 :: train: -7.1269, val: -7.5610, test: -7.9255
+2023-09-19 19:40:20,072 :: INFO     :: run_experiment  ::   split_2 :: train: -6.9817, val: -8.5815, test: -8.1968
+2023-09-19 19:40:20,089 :: INFO     :: search_sweep    ::   Finished DEFAULT search for TABPFN_FINETUNE on numerical_regression
