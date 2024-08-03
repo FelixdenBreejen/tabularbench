@@ -9,6 +9,7 @@ from autogluon.tabular import TabularPredictor
 from sklearn.base import BaseEstimator
 
 from tabularbench.config.config_run import ConfigRun
+from tabularbench.core.enums import Task
 from tabularbench.results.prediction_metrics import PredictionMetrics
 
 
@@ -39,11 +40,21 @@ class Trainer(BaseEstimator):
 
         path = Path("temp_autogluon") / f"device_{self.cfg.device}"
         if path.exists():
+            # Autogluon writes all models to disk, which takes up enormous amounts of space
+            # We delete the folder and recreate it to avoid running out of disk
             shutil.rmtree(path)
         path.mkdir(parents=True)
 
+        # Autogluon does not correctly infer the problem type from the data on Openml Dataset 146024
+        match self.cfg.task:
+            case Task.CLASSIFICATION:
+                problem_type = "multiclass"
+            case Task.REGRESSION:
+                problem_type = "regression"
+
         self.predictor = TabularPredictor(
             label="__TARGET__",
+            problem_type=problem_type,
             path=path,
         ).fit(
             train_data=x_train_df,
