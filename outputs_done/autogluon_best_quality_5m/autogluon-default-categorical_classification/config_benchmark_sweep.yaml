@@ -1,0 +1,127 @@
+!!python/object:tabularbench.config.config_benchmark_sweep.ConfigBenchmarkSweep
+benchmark: !!python/object:tabularbench.data.benchmarks.Benchmark
+  dataset_size: !!python/object/apply:tabularbench.core.enums.DatasetSize
+  - 10000
+  name: !!python/object/apply:tabularbench.core.enums.BenchmarkName
+  - categorical_classification
+  openml_dataset_ids:
+  - 44156
+  - 44157
+  - 44159
+  - 45035
+  - 45036
+  - 45038
+  - 45039
+  origin: !!python/object/apply:tabularbench.core.enums.BenchmarkOrigin
+  - whytrees
+  task: !!python/object/apply:tabularbench.core.enums.Task
+  - classification
+devices:
+- !!python/object/apply:torch.device
+  - cuda
+  - 0
+- !!python/object/apply:torch.device
+  - cuda
+  - 1
+- !!python/object/apply:torch.device
+  - cuda
+  - 2
+- !!python/object/apply:torch.device
+  - cuda
+  - 3
+- !!python/object/apply:torch.device
+  - cuda
+  - 4
+- !!python/object/apply:torch.device
+  - cuda
+  - 5
+- !!python/object/apply:torch.device
+  - cuda
+  - 6
+- !!python/object/apply:torch.device
+  - cuda
+  - 7
+hyperparams_object:
+  num_cpus: 8
+  time_limit: 300
+model_name: !!python/object/apply:tabularbench.core.enums.ModelName
+- AutoGluon
+model_plot_name: AutoGluon
+n_default_runs_per_dataset: 10
+n_random_runs_per_dataset: 500
+openml_dataset_ids_to_ignore: []
+openml_dataset_ids_to_use:
+- 44156
+- 44157
+- 44159
+- 45035
+- 45036
+- 45038
+- 45039
+output_dir: !!python/object/apply:pathlib.PosixPath
+- outputs
+- '2024-08-08'
+- 14-32-10
+- autogluon-default-categorical_classification
+plotting: !!python/object:tabularbench.config.config_plotting.ConfigPlotting
+  tabzilla: !!python/object:tabularbench.config.config_plotting.ConfigPlottingTabzilla
+    benchmark_model_names:
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - CatBoost
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - Resnet
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - RandomForest
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - SAINT
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - FT-Transformer
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - XGBoost
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - NODE
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - SVM
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - MLP-rtdl
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - LightGBM
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - LinearRegression
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - DANet
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - DecisionTree
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - MLP
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - STG
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - KNN
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - TabNet
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - VIME
+  whytrees: !!python/object:tabularbench.config.config_plotting.ConfigPlottingWhytrees
+    benchmark_model_names:
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - MLP
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - Resnet
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - SAINT
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - FT-Transformer
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - RandomForest
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - XGBoost
+    - !!python/object/apply:tabularbench.core.enums.ModelName
+      - GradientBoostingTree
+    confidence_bound: 0.9
+    n_random_shuffles: 100
+    n_runs: 1000
+    plot_default_value: true
+search_type: !!python/object/apply:tabularbench.core.enums.SearchType
+- default
+seed: 0

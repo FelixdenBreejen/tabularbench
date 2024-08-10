@@ -77,9 +77,11 @@ def run_experiment_(cfg: ConfigRun) -> RunMetrics:
         model = get_model(cfg, data.x_train_cut, data.y_train_cut, categorical_indicator)
         trainer = get_trainer(cfg, model, dataset.n_classes, dataset.feature_names)
         trainer.train(data.x_train_cut, data.y_train_cut, data.x_val_earlystop, data.y_val_earlystop)
-
+        logger.info("Testing on training...")
         prediction_metrics_train = trainer.test(data.x_train, data.y_train, data.x_train, data.y_train)
+        logger.info("Testing on validation...")
         prediction_metrics_val = trainer.test(data.x_train, data.y_train, data.x_val_hyperparams, data.y_val_hyperparams)
+        logger.info("Testing on test...")
         prediction_metrics_test = trainer.test(data.x_train_and_val, data.y_train_and_val, data.x_test, data.y_test)
 
         logger.info(f"split_{split_i} :: train: {prediction_metrics_train.score:.4f}, val: {prediction_metrics_val.score:.4f}, test: {prediction_metrics_test.score:.4f}")
