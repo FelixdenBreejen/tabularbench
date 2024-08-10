@@ -45,22 +45,27 @@ class Checkpoint():
         self.curr_best_loss = np.inf
         self.path = Path(self.dirname) / f"params_{self.id}.pt"
         self.path.parent.mkdir(exist_ok=True)
+        self.best_model: dict
 
     
     def reset(self, net: torch.nn.Module):
         self.curr_best_loss = np.inf
         self.best_model = net.state_dict()
+        for key in self.best_model:
+            self.best_model[key] = self.best_model[key].to('cpu')
         
 
-    def __call__(self, net, loss):
+    def __call__(self, net: torch.nn.Module, loss: float):
         
         if loss < self.curr_best_loss:
             self.curr_best_loss = loss
             self.best_model = net.state_dict()
+            for key in self.best_model:
+                self.best_model[key] = self.best_model[key].to('cpu')
 
-    
-    def save(self):
-        torch.save(self.best_model, self.path)
+
+    def set_to_best(self, net):
+        net.load_state_dict(self.best_model)
 
 
 

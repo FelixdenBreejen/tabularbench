@@ -106,7 +106,7 @@ class TrainerFinetune(BaseEstimator):
 
             self.scheduler.step(metrics_valid.loss)
 
-        self.checkpoint.save()
+        self.checkpoint.set_to_best(self.model)
     
 
     def train_epoch(self, dataloader: torch.utils.data.DataLoader) -> PredictionMetrics:
