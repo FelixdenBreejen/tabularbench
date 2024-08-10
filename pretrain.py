@@ -100,13 +100,12 @@ def setup_gpus_of_experiment(cfg: ConfigPretrain, gpu_process_index: int) -> tor
     cfg.device = device
     cfg.is_main_process = (gpu_process_index == 0)
 
-    if cfg.use_ddp:
-        os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-        os.environ['MASTER_ADDR'] = 'localhost'
-        port = 5678 + cfg.devices[0].index
-        os.environ['MASTER_PORT'] = str(port)
-        
-        torch.distributed.init_process_group(backend="nccl", world_size = len(cfg.devices), rank=gpu_process_index)
+    os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
+    os.environ['MASTER_ADDR'] = 'localhost'
+    port = 5678 + cfg.devices[0].index
+    os.environ['MASTER_PORT'] = str(port)
+    
+    torch.distributed.init_process_group(backend="nccl", world_size = len(cfg.devices), rank=gpu_process_index)
 
     return device
 

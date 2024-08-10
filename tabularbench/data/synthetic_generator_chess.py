@@ -18,7 +18,8 @@ def synthetic_dataset_function_chess(
     y = np.zeros(n_samples)
 
     for i in range(n_features):
-        n_grid_areas = np.random.randint(1, max_grid_areas, size=1).item()
+
+        n_grid_areas = np.random.randint(1, max_grid_areas+1, size=1).item()
         grid_lines = np.random.uniform(0, 1, size=(n_grid_areas-1,))
         grid_lines.sort()
         grid_values = np.random.uniform(0, 1, size=(n_grid_areas,))
