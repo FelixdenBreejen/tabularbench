@@ -35,7 +35,7 @@ class SyntheticDatasetGeneratorSelectorMixin():
                     min_features=self.min_features,
                     max_features=self.max_features,
                     max_classes=self.max_classes,
-                    base_size=self.generator_hyperparams['max_grid_areas']
+                    max_grid_areas=self.generator_hyperparams['max_grid_areas']
                 )
             case GeneratorName.NEIGHBOR:
                 return synthetic_dataset_generator_neighbor(
