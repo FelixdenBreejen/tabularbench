@@ -105,6 +105,7 @@ class GeneratorName(StrEnum):
     FOREST = 'forest'
     NEIGHBOR = 'neighbor'
     MIX = 'mix'
+    CHESS = 'chess'
 
 
 class MetricName(StrEnum):
