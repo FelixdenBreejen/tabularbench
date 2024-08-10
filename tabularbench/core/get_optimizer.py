@@ -1,5 +1,4 @@
 import torch
-from omegaconf import DictConfig
 from torch.optim import SGD, Adam, AdamW
 
 from tabularbench.config.config_pretrain import ConfigPretrain
@@ -53,7 +52,7 @@ def get_optimizer_pretrain(cfg: ConfigPretrain, model: torch.nn.Module) -> torch
         {"params": parameters_without_weight_decay, "weight_decay": 0.0},
     ]
 
-    optimizer = torch.optim.Adam(
+    optimizer = torch.optim.AdamW(
         optimizer_parameters, 
         lr=cfg.optim.lr,
         betas=(cfg.optim.beta1, cfg.optim.beta2),
