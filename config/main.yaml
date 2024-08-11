@@ -6,11 +6,11 @@ defaults:
   - _self_
   - hyperparams/ft_transformer: ft_transformer
   - hyperparams/tabpfn: finetune_10k
-  - hyperparams/foundation: finetune_10k_forest
+  - hyperparams/foundation: finetune_10k_tabpfn
   - hyperparams/carte: carte
   - hyperparams/autogluon: autogluon
   - plotting: plotting_default
-  # - main_test
+  - main_test
   - override hydra/hydra_logging: disabled  
   - override hydra/job_logging: disabled  
 
@@ -41,6 +41,9 @@ benchmarks:
 search_types:
   - DEFAULT
   # - RANDOM
+downstream_tasks:                               
+  - ZEROSHOT
+  - FINETUNE
 
 
 openml_dataset_ids_to_ignore: []
