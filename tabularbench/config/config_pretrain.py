@@ -22,6 +22,7 @@ class ConfigPretrain(ConfigSaveLoadMixin):
     output_dir: Path
     seed: int
     devices: list[torch.device]
+    max_cpus_per_device: Optional[int]
     use_ddp: bool
     workers_per_gpu: int
     model: dict
@@ -53,10 +54,11 @@ class ConfigPretrain(ConfigSaveLoadMixin):
             devices=devices,
             use_ddp=len(devices) > 1,
             seed=cfg_hydra.seed,
+            max_cpus_per_device=cfg_hydra.max_cpus_per_device,
             workers_per_gpu=cfg_hydra.workers_per_gpu,
-            model = OmegaConf.to_container(model_settings),
+            model = OmegaConf.to_container(model_settings),    # type: ignore 
             model_name = pretrain_model_name,
-            hyperparams_finetuning = OmegaConf.to_container(hyperparams_finetuning),
+            hyperparams_finetuning = OmegaConf.to_container(hyperparams_finetuning),    # type: ignore
             data = ConfigData(
                 generator=GeneratorName(cfg_hydra.data.generator),
                 min_samples_support=cfg_hydra.data.min_samples_support,
@@ -65,7 +67,7 @@ class ConfigPretrain(ConfigSaveLoadMixin):
                 min_features=cfg_hydra.data.min_features,
                 max_features=cfg_hydra.data.max_features,
                 max_classes=cfg_hydra.data.max_classes,
-                generator_hyperparams=OmegaConf.to_container(cfg_hydra.data.generator_hyperparams),
+                generator_hyperparams=OmegaConf.to_container(cfg_hydra.data.generator_hyperparams),    # type: ignore
             ),
             optim = ConfigOptim(
                 max_steps=cfg_hydra.optim.max_steps,
@@ -90,7 +92,7 @@ class ConfigPretrain(ConfigSaveLoadMixin):
             testing = ConfigTesting(
                 n_default_runs_per_dataset_valid=cfg_hydra.testing.n_default_runs_per_dataset_valid,
                 n_default_runs_per_dataset_test=cfg_hydra.testing.n_default_runs_per_dataset_test,
-                openml_dataset_ids_to_ignore=OmegaConf.to_container(cfg_hydra.testing.openml_dataset_ids_to_ignore),
+                openml_dataset_ids_to_ignore=OmegaConf.to_container(cfg_hydra.testing.openml_dataset_ids_to_ignore),    # type: ignore
                 benchmarks=[BenchmarkName[benchmark] for benchmark in cfg_hydra.testing.benchmarks],
             ),
             plotting = ConfigPlotting(

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Self
+from typing import Optional, Self
 
 import torch
 
@@ -16,10 +16,11 @@ from tabularbench.data.datafile_openml import OpenmlDatafile
 class ConfigRun(ConfigSaveLoadMixin):
     output_dir: Path
     device: torch.device
+    cpus: Optional[list[int]]
     seed: int
     model_name: ModelName
     task: Task
-    dataset_size: DatasetSize
+    dataset_size: Optional[DatasetSize]
     openml_dataset_id: int
     openml_dataset_name: str
     datafile_path: Path
@@ -44,10 +45,16 @@ class ConfigRun(ConfigSaveLoadMixin):
         
         output_dir = cfg.output_dir / str(openml_dataset_id) / f"#{run_id}"
 
+        if cfg.max_cpus_per_device is not None:
+            cpus = [device.index * cfg.max_cpus_per_device + i for i in range(cfg.max_cpus_per_device)]
+        else:
+            cpus = None
+
         return cls(
             output_dir=output_dir,
             model_name=cfg.model_name,
             device=device,
+            cpus=cpus,
             seed=seed,
             task=cfg.benchmark.task,
             dataset_size=dataset_size,

@@ -148,8 +148,6 @@ class TrainerFinetune(BaseEstimator):
     
     def test(self, x_train: np.ndarray, y_train: np.ndarray, x_test: np.ndarray, y_test: np.ndarray) -> PredictionMetrics:
 
-        self.load_params(self.checkpoint.path)
-
         y_hats = self.predict(x_train, self.y_transformer.transform(y_train), x_test)
 
         prediction_metrics = PredictionMetrics.from_prediction(y_hats, y_test, self.cfg.task)

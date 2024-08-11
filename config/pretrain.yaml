@@ -15,8 +15,9 @@ defaults:
 
 output_dir: ${hydra:run.dir}
 seed: 0
-devices: [4]
+devices: [0, 1, 2, 3, 4, 5, 6, 7]
 workers_per_gpu: 16
+max_cpus_per_device: null
 
 optim:
   max_steps: 25_000                # Every step completes batch_size * gradient_accumulation_steps samples
@@ -31,11 +32,11 @@ optim:
   beta2: 0.95
   cosine_scheduler: True  
   max_grad_norm: 1.0
-  use_pretrained_weights: False
-  path_to_weights: outputs_done/foundation_key_att/weights/model_step_500000.pt               # Path to a checkpoint to load weights from
+  use_pretrained_weights: True
+  path_to_weights: outputs_backup/foundation_tabpfn_big_600k_zeroshot/weights/model_step_600000.pt              # Path to a checkpoint to load weights from
 
 data:
-  generator: chess             # tabpfn, forest, mix, chess or neighbor
+  generator: tabpfn             # tabpfn, forest, mix, chess or neighbor
   min_samples_support: 128
   max_samples_support: 1024            
   n_samples_query: 256
@@ -43,7 +44,7 @@ data:
   max_features: 100
   max_classes: 10
   generator_hyperparams:
-    max_grid_areas: 1
+    max_grid_areas: 8
 
 
 preprocessing:

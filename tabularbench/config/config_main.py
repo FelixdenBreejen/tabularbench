@@ -68,6 +68,7 @@ class ConfigMain(ConfigSaveLoadMixin):
                 output_dir=output_dir_benchmark,
                 seed=cfg_hydra.seed,
                 devices=devices,
+                max_cpus_per_device=cfg_hydra.max_cpus_per_device,
                 benchmark=benchmark,
                 model_name=model_name,
                 model_plot_name=model_plot_name,

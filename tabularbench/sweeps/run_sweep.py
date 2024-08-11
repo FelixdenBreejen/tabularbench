@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import os
 import random
 
 import torch
@@ -44,7 +43,7 @@ class SweepRunner():
         self.device_queue = self.manager.Queue()
         self.results_run_dict = self.manager.dict()
         self.runs_busy_dict = self.manager.dict()
-        self.runs_attempted_dict = {}
+        self.runs_attempted_dict: dict[int, int] = {}
 
         self.initalize_run_dicts()
         self.initalize_device_queue()
@@ -201,8 +200,6 @@ def run_a_run(
     search_type: SearchType
 ):
 
-    set_cpus(cfg)
-
     logger.add(cfg.output_dir / "log.log", enqueue=True)
     metrics = run_experiment(cfg)
 
@@ -215,14 +212,7 @@ def run_a_run(
 
     run_result = ResultsRun.from_run_config(cfg, search_type, metrics)
     run_results_dict[cfg.openml_dataset_id].append(run_result)
-    device_queue.put(device)
-
-
-def set_cpus(cfg: ConfigRun) -> None:
-
-    cpus = [cfg.device.index * 8 + i for i in range(8)]
-    os.sched_setaffinity(os.getpid(), cpus)
-    
+    device_queue.put(device)    
 
 
 def log_ignore_datasets(cfg: ConfigBenchmarkSweep) -> None:

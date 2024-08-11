@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
 
 import torch
 
@@ -14,6 +15,7 @@ class ConfigBenchmarkSweep(ConfigSaveLoadMixin):
     output_dir: Path
     seed: int
     devices: list[torch.device]
+    max_cpus_per_device: Optional[int]
     benchmark: Benchmark
     model_name: ModelName
     model_plot_name: str

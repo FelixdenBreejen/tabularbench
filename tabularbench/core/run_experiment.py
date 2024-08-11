@@ -1,3 +1,4 @@
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
@@ -19,6 +20,7 @@ from tabularbench.utils.set_seed import set_seed
 
 def run_experiment(cfg: ConfigRun) -> Optional[RunMetrics]:
 
+    set_cpus(cfg)
     cfg.save(cfg.output_dir / CONFIG_RUN_FILE_NAME)
 
     logger.info(f"Start experiment on {cfg.openml_dataset_name} (id={cfg.openml_dataset_id}) with {cfg.model_name.value} doing {cfg.task.value}")
@@ -130,6 +132,16 @@ class Data():
         )
 
 
+def set_cpus(cfg: ConfigRun) -> None:
+
+    if cfg.cpus is not None:
+
+        total_cpus = os.cpu_count()
+        assert total_cpus is not None, "Could not determine number of cpus"
+        assert all([cpu < total_cpus for cpu in cfg.cpus]), f"cpus {cfg.cpus} contain cpu ids that are not available on this machine"
+
+        os.sched_setaffinity(os.getpid(), cfg.cpus)
+
 
 if __name__ == "__main__":
 
@@ -138,13 +150,14 @@ if __name__ == "__main__":
     cfg = ConfigRun(
         output_dir = Path("output_run_experiment"),
         device = torch.device("cuda:6"),
+        cpus = None,
         model_name = ModelName.FOUNDATION,
         seed = 0,
         task = Task.CLASSIFICATION,
         dataset_size = DatasetSize.MEDIUM,
-        openml_dataset_id = 44156,
-        openml_dataset_name = "electricity",
-        datafile_path = Path("data/datasets/whytrees_44156_MEDIUM.nc"),
+        openml_dataset_id = 45035,
+        openml_dataset_name = "albert",
+        datafile_path = Path("data/datasets/whytrees_45035_MEDIUM.nc"),
         hyperparams = dict({
             'n_features': 100,
             'n_classes': 10,
@@ -155,7 +168,7 @@ if __name__ == "__main__":
             'y_as_float_embedding': True,
             'max_samples_support': 8192,
             'max_samples_query': 512,
-            'max_epochs': 3,
+            'max_epochs': 300,
             'optimizer': 'adamw',
             'lr': 1.e-5,
             'weight_decay': 0,
@@ -163,7 +176,7 @@ if __name__ == "__main__":
             'lr_scheduler_patience': 30,
             'early_stopping_patience': 40,
             'use_pretrained_weights': True,
-            'path_to_weights': Path("outputs_done/foundation_forest_big_300k/weights/model_step_300000.pt"),
+            'path_to_weights': Path("outputs_backup/foundation_tabpfn_big_600k_zeroshot/weights/model_step_600000.pt"),
             'n_ensembles': 1,
             'use_quantile_transformer': True,
             'use_feature_count_scaling': True
