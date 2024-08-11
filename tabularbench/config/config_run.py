@@ -8,7 +8,7 @@ import torch
 
 from tabularbench.config.config_benchmark_sweep import ConfigBenchmarkSweep
 from tabularbench.config.config_save_load_mixin import ConfigSaveLoadMixin
-from tabularbench.core.enums import DatasetSize, ModelName, Task
+from tabularbench.core.enums import DatasetSize, DownstreamTask, ModelName, Task
 from tabularbench.data.datafile_openml import OpenmlDatafile
 
 
@@ -44,6 +44,9 @@ class ConfigRun(ConfigSaveLoadMixin):
         openml_dataset_name = openml_datafile.ds.attrs['openml_dataset_name']
         
         output_dir = cfg.output_dir / str(openml_dataset_id) / f"#{run_id}"
+
+        if cfg.downstream_task == DownstreamTask.ZEROSHOT:
+            hyperparams['max_epochs'] = 0
 
         if cfg.max_cpus_per_device is not None:
             cpus = [device.index * cfg.max_cpus_per_device + i for i in range(cfg.max_cpus_per_device)]

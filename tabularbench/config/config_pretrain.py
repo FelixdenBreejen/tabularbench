@@ -14,7 +14,7 @@ from tabularbench.config.config_plotting import ConfigPlottingTabzilla, ConfigPl
 from tabularbench.config.config_preprocessing import ConfigPreprocessing
 from tabularbench.config.config_save_load_mixin import ConfigSaveLoadMixin
 from tabularbench.config.config_testing import ConfigTesting
-from tabularbench.core.enums import BenchmarkName, GeneratorName, ModelName
+from tabularbench.core.enums import GeneratorName, ModelName
 
 
 @dataclass
@@ -89,12 +89,7 @@ class ConfigPretrain(ConfigSaveLoadMixin):
                 use_quantile_transformer=cfg_hydra.preprocessing.use_quantile_transformer,
                 use_feature_count_scaling=cfg_hydra.preprocessing.use_feature_count_scaling,
             ),
-            testing = ConfigTesting(
-                n_default_runs_per_dataset_valid=cfg_hydra.testing.n_default_runs_per_dataset_valid,
-                n_default_runs_per_dataset_test=cfg_hydra.testing.n_default_runs_per_dataset_test,
-                openml_dataset_ids_to_ignore=OmegaConf.to_container(cfg_hydra.testing.openml_dataset_ids_to_ignore),    # type: ignore
-                benchmarks=[BenchmarkName[benchmark] for benchmark in cfg_hydra.testing.benchmarks],
-            ),
+            testing = ConfigTesting.from_hydra(cfg_hydra.testing),
             plotting = ConfigPlotting(
                 whytrees = ConfigPlottingWhytrees(                    
                     n_runs=cfg_hydra.plotting.whytrees.n_runs,

@@ -7,7 +7,7 @@ from loguru import logger
 from sklearn.base import BaseEstimator
 
 from tabularbench.config.config_pretrain import ConfigPretrain
-from tabularbench.core.enums import BenchmarkName, DataSplit, Phase
+from tabularbench.core.enums import BenchmarkName, DataSplit, DownstreamTask, Phase
 from tabularbench.core.get_model import get_model_pretrain
 from tabularbench.core.get_optimizer import get_optimizer_pretrain
 from tabularbench.core.get_scheduler import get_scheduler_pretrain
@@ -186,6 +186,7 @@ class TrainerPretrain(BaseEstimator):
         cfg_sweep = create_config_benchmark_sweep(
             cfg=self.cfg,
             benchmark=BENCHMARKS[BenchmarkName.CATEGORICAL_CLASSIFICATION],
+            downstream_task=DownstreamTask.FINETUNE,
             output_dir=output_dir,
             weights_path=weights_path,
             plot_name=plot_name,
@@ -211,19 +212,21 @@ class TrainerPretrain(BaseEstimator):
         torch.cuda.empty_cache()
 
         for benchmark_name in self.cfg.testing.benchmarks:
+            for downstream_task in self.cfg.testing.downstream_tasks:
                 
-            benchmark = BENCHMARKS[benchmark_name]
-            output_dir = self.cfg.output_dir / f"test_{benchmark_name.value}"
+                benchmark = BENCHMARKS[benchmark_name]
+                output_dir = self.cfg.output_dir / f"{benchmark_name.value}_{downstream_task.value}"
 
-            cfg_sweep = create_config_benchmark_sweep(
-                cfg=self.cfg,
-                benchmark=benchmark,
-                output_dir=output_dir,
-                weights_path=self.last_weights_path,
-                plot_name=f"{self.cfg.model_name.value} Pretrain Test",
-                phase=Phase.TESTING
-            )
-            run_sweep(cfg_sweep)
+                cfg_sweep = create_config_benchmark_sweep(
+                    cfg=self.cfg,
+                    benchmark=benchmark,
+                    downstream_task=downstream_task,
+                    output_dir=output_dir,
+                    weights_path=self.last_weights_path,
+                    plot_name=f"{self.cfg.model_name.value}_{downstream_task.value} Pretrain Step {self.step}",
+                    phase=Phase.TESTING
+                )
+                run_sweep(cfg_sweep)
 
 
     

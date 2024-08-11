@@ -32,7 +32,7 @@ optim:
   beta2: 0.95
   cosine_scheduler: True  
   max_grad_norm: 1.0
-  use_pretrained_weights: True
+  use_pretrained_weights: False
   path_to_weights: outputs_backup/foundation_tabpfn_big_600k_zeroshot/weights/model_step_600000.pt              # Path to a checkpoint to load weights from
 
 data:
@@ -52,6 +52,9 @@ preprocessing:
   use_feature_count_scaling: True        # TabPFN: True
 
 testing:
+  downstream_tasks:                               # What task to do during validation and testing phase
+    - ZEROSHOT
+    - FINETUNE
   n_default_runs_per_dataset_valid: 1           # Only applicable to the WHYTREES benchmark          
   n_default_runs_per_dataset_test: 10           # Only applicable to the WHYTREES benchmark           
   openml_dataset_ids_to_ignore: []

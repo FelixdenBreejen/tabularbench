@@ -2,13 +2,14 @@ from pathlib import Path
 
 from tabularbench.config.config_benchmark_sweep import ConfigBenchmarkSweep
 from tabularbench.config.config_pretrain import ConfigPretrain
-from tabularbench.core.enums import BenchmarkOrigin, ModelName, Phase, SearchType
+from tabularbench.core.enums import BenchmarkOrigin, DownstreamTask, ModelName, Phase, SearchType
 from tabularbench.data.benchmarks import Benchmark
 
 
 def create_config_benchmark_sweep(
         cfg: ConfigPretrain,
         benchmark: Benchmark, 
+        downstream_task: DownstreamTask,
         output_dir: Path,
         weights_path: Path,
         plot_name: str,
@@ -21,10 +22,12 @@ def create_config_benchmark_sweep(
         output_dir=output_dir,
         seed=cfg.seed,
         devices=cfg.devices,
+        max_cpus_per_device=cfg.max_cpus_per_device,
         benchmark=benchmark,
         model_name=cfg.model_name,
         model_plot_name=plot_name,
         search_type=SearchType.DEFAULT,
+        downstream_task=downstream_task,
         plotting=cfg.plotting,
         n_random_runs_per_dataset=1,
         n_default_runs_per_dataset=decide_n_default_runs_per_dataset(cfg, benchmark, phase),
@@ -60,5 +63,5 @@ def decide_n_default_runs_per_dataset(cfg: ConfigPretrain, benchmark: Benchmark,
             return cfg.testing.n_default_runs_per_dataset_test
         case (BenchmarkOrigin.TABZILLA, _):
             return 1
-        case (_, _):
+        case _:
             raise ValueError("Not decided how to set the number of runs")

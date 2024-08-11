@@ -74,6 +74,9 @@ class ModelClass(StrEnum):
     ICLT = 'ICLT'
 
 
+class DownstreamTask(StrEnum):
+    ZEROSHOT = "zeroshot"
+    FINETUNE = "finetune"
 
 
 

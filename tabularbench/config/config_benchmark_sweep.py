@@ -6,7 +6,7 @@ import torch
 
 from tabularbench.config.config_plotting import ConfigPlotting
 from tabularbench.config.config_save_load_mixin import ConfigSaveLoadMixin
-from tabularbench.core.enums import ModelName, SearchType
+from tabularbench.core.enums import DownstreamTask, ModelName, SearchType
 from tabularbench.data.benchmarks import Benchmark
 
 
@@ -20,6 +20,7 @@ class ConfigBenchmarkSweep(ConfigSaveLoadMixin):
     model_name: ModelName
     model_plot_name: str
     search_type: SearchType
+    downstream_task: DownstreamTask
     plotting: ConfigPlotting
     n_random_runs_per_dataset: int
     n_default_runs_per_dataset: int

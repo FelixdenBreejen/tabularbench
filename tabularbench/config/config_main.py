@@ -11,7 +11,7 @@ from omegaconf import DictConfig, OmegaConf
 from tabularbench.config.config_benchmark_sweep import ConfigBenchmarkSweep, ConfigPlotting
 from tabularbench.config.config_plotting import ConfigPlottingTabzilla, ConfigPlottingWhytrees
 from tabularbench.config.config_save_load_mixin import ConfigSaveLoadMixin
-from tabularbench.core.enums import BenchmarkName, BenchmarkOrigin, ModelName, SearchType
+from tabularbench.core.enums import BenchmarkName, BenchmarkOrigin, DownstreamTask, ModelName, SearchType
 from tabularbench.data.benchmarks import BENCHMARKS
 
 
@@ -44,21 +44,22 @@ class ConfigMain(ConfigSaveLoadMixin):
         benchmark_names = [BenchmarkName[benchmark] for benchmark in cfg_hydra.benchmarks]
         models = [ModelName[model] for model in cfg_hydra.models]
         search_types = [SearchType[search_type] for search_type in cfg_hydra.search_types]
+        downstream_tasks = [DownstreamTask[downstream_task] for downstream_task in cfg_hydra.downstream_tasks]
         devices = [torch.device(device) for device in cfg_hydra.devices]
 
         assert len(models) == len(cfg_hydra.model_plot_names), f"Please provide a plot name for each model. Got {len(models)} models and {len(cfg_hydra.model_plot_names)} plot names."
         models_with_plot_name = zip(models, cfg_hydra.model_plot_names)
-        sweep_details = itertools.product(models_with_plot_name, search_types, benchmark_names)
+        sweep_details = itertools.product(models_with_plot_name, search_types, benchmark_names, downstream_tasks)
 
         benchmark_sweep_configs = []
 
-        for (model_name, model_plot_name), search_type, benchmark_name in sweep_details:
+        for (model_name, model_plot_name), search_type, benchmark_name, downstream_task in sweep_details:
 
             benchmark = BENCHMARKS[benchmark_name]
             hyperparams_object = cfg_hydra.hyperparams[model_name.name.lower()]
             hyperparams_object = OmegaConf.to_container(hyperparams_object, resolve=True)
 
-            output_dir_benchmark = output_dir / f'{model_name.value.lower()}-{search_type.value}-{benchmark_name.value}'
+            output_dir_benchmark = output_dir / f'{model_name.value.lower()}-{search_type.value}-{benchmark_name.value}-{downstream_task.value}'
           
             dataset_ids_to_ignore = list(set(cfg_hydra.openml_dataset_ids_to_ignore) & set(benchmark.openml_dataset_ids))
 
@@ -70,6 +71,7 @@ class ConfigMain(ConfigSaveLoadMixin):
                 devices=devices,
                 max_cpus_per_device=cfg_hydra.max_cpus_per_device,
                 benchmark=benchmark,
+                downstream_task=downstream_task,
                 model_name=model_name,
                 model_plot_name=model_plot_name,
                 search_type=search_type,
@@ -80,7 +82,7 @@ class ConfigMain(ConfigSaveLoadMixin):
                 hyperparams_object=hyperparams_object
             )
         
-            logger.info(f"Created benchmark sweep config for {bscfg.benchmark.name}-{bscfg.model_name.name}-{bscfg.search_type.name} ")
+            logger.info(f"Created benchmark sweep config for {bscfg.benchmark.name}-{bscfg.model_name.name}-{bscfg.search_type.name}-{bscfg.downstream_task.name}")
             benchmark_sweep_configs.append(bscfg)
         
         return benchmark_sweep_configs
